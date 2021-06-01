@@ -1,17 +1,14 @@
 uuid: 9d410689-b986-4c0f-8817-c3ac6594c9e9
 langcode: en
-status: true
+status: false
 dependencies:
-  content:
-    - 'block_content:payment_block:ec81f92d-fdcc-4430-95bb-09ab209c34a3'
   module:
-    - block_content
     - system
   theme:
     - IOI_theme
 id: payment
 theme: IOI_theme
-region: footer_second
+region: header
 weight: -10
 provider: null
 plugin: 'block_content:ec81f92d-fdcc-4430-95bb-09ab209c34a3'

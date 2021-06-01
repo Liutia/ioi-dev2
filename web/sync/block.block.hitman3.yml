@@ -1,21 +1,30 @@
-uuid: 2a256a06-ddd1-4a6f-8bb9-2d965e42c7d4
+uuid: 466bd3a1-b09b-4d68-bc66-f48560609ec8
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:block_for_main_news_and_main_hit:366c07ca-58ef-4ef9-9b3f-e2dbb4a8f562'
+  module:
+    - block_content
+    - system
   theme:
     - IOI_theme
 id: hitman3
 theme: IOI_theme
 region: featured_bottom_third
-weight: -15
+weight: 0
 provider: null
-plugin: 'block_content:80915d0b-ff08-4cf0-8e6a-6ce77937d1fd'
+plugin: 'block_content:366c07ca-58ef-4ef9-9b3f-e2dbb4a8f562'
 settings:
-  id: 'block_content:80915d0b-ff08-4cf0-8e6a-6ce77937d1fd'
-  label: 'HITMAN 3'
+  id: 'block_content:366c07ca-58ef-4ef9-9b3f-e2dbb4a8f562'
+  label: "HITMAN 3\t"
   provider: block_content
   label_display: visible
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

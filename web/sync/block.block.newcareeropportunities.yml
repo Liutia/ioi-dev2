@@ -1,17 +1,14 @@
 uuid: d8f9f53f-dd62-4222-8656-c6e2ebaf9703
 langcode: en
-status: true
+status: false
 dependencies:
-  content:
-    - 'block_content:social_networks:808c1ab6-4f88-4ef6-bc7d-28cabd1563b7'
   module:
-    - block_content
     - system
   theme:
     - IOI_theme
 id: newcareeropportunities
 theme: IOI_theme
-region: footer_second
+region: header
 weight: -14
 provider: null
 plugin: 'block_content:808c1ab6-4f88-4ef6-bc7d-28cabd1563b7'

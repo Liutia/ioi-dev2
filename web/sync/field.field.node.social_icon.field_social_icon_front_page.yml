@@ -1,0 +1,23 @@
+uuid: ca28901f-e8c5-4923-8c30-4fab114b42e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_icon_front_page
+    - node.type.social_icon
+  module:
+    - link
+id: node.social_icon.field_social_icon_front_page
+field_name: field_social_icon_front_page
+entity_type: node
+bundle: social_icon
+label: 'social icon front page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

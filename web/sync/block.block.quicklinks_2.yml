@@ -1,0 +1,29 @@
+uuid: 2d92ed57-633d-45bf-a417-42a2a5afeaeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-quick-links
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: quicklinks_2
+theme: IOI_theme
+region: footer_first
+weight: -20
+provider: null
+plugin: 'system_menu_block:footer-quick-links'
+settings:
+  id: 'system_menu_block:footer-quick-links'
+  label: 'Quick links'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: false

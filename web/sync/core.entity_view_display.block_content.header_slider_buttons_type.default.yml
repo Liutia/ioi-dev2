@@ -1,0 +1,22 @@
+uuid: 1700d011-64be-4152-8991-e28d0625d460
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_slider_buttons_type
+    - field.field.block_content.header_slider_buttons_type.body
+  module:
+    - text
+id: block_content.header_slider_buttons_type.default
+targetEntityType: block_content
+bundle: header_slider_buttons_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
