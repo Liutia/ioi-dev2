@@ -1,0 +1,16 @@
+uuid: b6a527ea-e824-40f3-a056-630526b946dc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CJJ45JeHWMqo4WsXgduVqxfotFWSUYEjAKpr5sHru58
+id: linkedin
+label: LinkedIn
+hostnames:
+  - linkedin.com
+class: null
+icon: linkedin
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#1C87BD'

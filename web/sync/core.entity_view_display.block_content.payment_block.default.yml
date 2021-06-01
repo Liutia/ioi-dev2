@@ -1,0 +1,28 @@
+uuid: e2737bc8-4750-47fb-9ac1-19dd46b4cdad
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.payment_block
+    - field.field.block_content.payment_block.field_payment
+    - image.style.36x22_for_payment
+  module:
+    - ds
+    - media
+id: block_content.payment_block.default
+targetEntityType: block_content
+bundle: payment_block
+mode: default
+content:
+  field_payment:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: 36x22_for_payment
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    region: content
+hidden: {  }

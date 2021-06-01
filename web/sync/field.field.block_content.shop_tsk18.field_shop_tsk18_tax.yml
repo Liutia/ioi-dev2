@@ -1,0 +1,29 @@
+uuid: f5f618f2-5cd1-4426-a912-39bb5051ea21
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.shop_tsk18
+    - field.storage.block_content.field_shop_tsk18_tax
+    - taxonomy.vocabulary.clothes_variations
+id: block_content.shop_tsk18.field_shop_tsk18_tax
+field_name: field_shop_tsk18_tax
+entity_type: block_content
+bundle: shop_tsk18
+label: shop_tsk18_tax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      clothes_variations: clothes_variations
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: clothes
+field_type: entity_reference

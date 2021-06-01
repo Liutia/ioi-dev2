@@ -1,0 +1,10 @@
+uuid: 6cb27614-a0dd-4bf3-99ec-c7c656eac7e1
+langcode: en
+status: true
+dependencies: {  }
+label: 'Clothing order type'
+id: clothing_order_type
+purchasableEntityType: commerce_product_variation
+orderType: online_order_type
+traits: {  }
+locked: false

@@ -1,0 +1,223 @@
+uuid: 13acc240-eb43-40c1-9df7-bb44027505fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_store.body
+    - field.field.node.slider_store.field_slider_store_image
+    - field.field.node.slider_store.field_slider_store_link
+    - field.field.node.slider_store.field_stop
+    - field.field.node.slider_store.field_stop_play
+    - node.type.slider_store
+  module:
+    - field_group
+    - fontawesome
+    - layout_builder
+    - layout_discovery
+    - link
+    - media
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_sl_group:
+      children:
+        - body
+        - field_slider_store_link
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      region: content
+      format_settings:
+        description: ''
+        id: ''
+        classes: slider-body
+      label: sl-group
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d63e930f-d8c9-4a42-886c-c338f26a0013:
+            uuid: d63e930f-d8c9-4a42-886c-c338f26a0013
+            region: content
+            configuration:
+              id: 'field_block:node:slider_store:field_slider_store_image'
+              label: Slider-store-image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          7be69aab-2b80-41c6-b795-64f24231c2f8:
+            uuid: 7be69aab-2b80-41c6-b795-64f24231c2f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:slider_store:field_stop'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+          f7ccfd54-a4b1-494f-95d4-af01e275846e:
+            uuid: f7ccfd54-a4b1-494f-95d4-af01e275846e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:slider_store:field_stop_play'
+              formatter:
+                label: above
+                settings:
+                  layers: false
+                third_party_settings: {  }
+                type: fontawesome_icon_formatter
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          356e897b-a5c6-464b-8f0d-642ed045d308:
+            uuid: 356e897b-a5c6-464b-8f0d-642ed045d308
+            region: content
+            configuration:
+              id: 'field_block:node:slider_store:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          056ae89c-bb77-4f07-8ff3-a27e81af99d1:
+            uuid: 056ae89c-bb77-4f07-8ff3-a27e81af99d1
+            region: content
+            configuration:
+              id: 'field_block:node:slider_store:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          24c08d61-8c2d-401d-9917-0597ddb449d0:
+            uuid: 24c08d61-8c2d-401d-9917-0597ddb449d0
+            region: content
+            configuration:
+              id: 'field_block:node:slider_store:field_slider_store_link'
+              label: Slider-store-link
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.slider_store.default
+targetEntityType: node
+bundle: slider_store
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_slider_store_image:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_slider_store_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_stop:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_stop_play:
+    weight: 4
+    label: above
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,18 @@
+uuid: a43bc574-c856-4880-a491-fc2ee2299c48
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Instagram items'
+type: instagram_items
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

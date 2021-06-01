@@ -1,0 +1,16 @@
+uuid: 7157f3a7-a5f7-4f6d-8578-6d0d49b8d5c2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EPCxbpj-95k7OBmmh6-M-JY9KVAFdiKcLCRqd3vE-fM
+id: googledrive
+label: 'Google Drive'
+hostnames:
+  - drive.google.com
+class: google-drive
+icon: google-drive
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#1FA463'

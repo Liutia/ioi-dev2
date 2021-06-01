@@ -1,0 +1,16 @@
+uuid: 99cfcec3-0608-4813-b5ec-e984f4e0e95d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rsw8y3XwrutGPWgaZ2YDtfle9dtLKgR9GysrpTLKATg
+id: napster
+label: Napster
+hostnames:
+  - napster.com
+class: null
+icon: napster
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#2E45B5'

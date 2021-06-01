@@ -1,0 +1,16 @@
+uuid: 15febf4a-14a1-43ab-8968-a73e0203f454
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: GOp7N0e0WHkomIlXHLF4lWcwoOEnqkLNzww3dfR9TOU
+id: wikipedia
+label: Wikipedia
+hostnames:
+  - wikipedia.org
+class: null
+icon: wikipedia-w
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

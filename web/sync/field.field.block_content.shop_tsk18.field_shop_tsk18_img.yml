@@ -1,0 +1,38 @@
+uuid: 64fd6a39-030a-413d-b714-e1269fbb3149
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.shop_tsk18
+    - field.storage.block_content.field_shop_tsk18_img
+  module:
+    - image
+id: block_content.shop_tsk18.field_shop_tsk18_img
+field_name: field_shop_tsk18_img
+entity_type: block_content
+bundle: shop_tsk18
+label: shop_tsk18_img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

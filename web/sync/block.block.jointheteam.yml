@@ -1,0 +1,21 @@
+uuid: e302e367-513b-4b6a-90f7-8a3baad41e47
+langcode: en
+status: true
+dependencies:
+  theme:
+    - IOI_theme
+id: jointheteam
+theme: IOI_theme
+region: featured_bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:beb3f6eb-eab7-43bf-97bf-021a04dd72e4'
+settings:
+  id: 'block_content:beb3f6eb-eab7-43bf-97bf-021a04dd72e4'
+  label: 'Join the team!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

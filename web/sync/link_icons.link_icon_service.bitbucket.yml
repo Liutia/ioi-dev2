@@ -1,0 +1,16 @@
+uuid: acec31af-ccd6-43f1-9adc-54588cc29a48
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MftkQok5lCyaZxcndsSd53qg0bxBbuNEQo42qd-3FcA
+id: bitbucket
+label: Bitbucket
+hostnames:
+  - bitbucket.org
+class: null
+icon: bitbucket
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

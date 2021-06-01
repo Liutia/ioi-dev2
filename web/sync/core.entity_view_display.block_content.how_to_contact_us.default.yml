@@ -1,0 +1,176 @@
+uuid: a5a04d7d-56a4-4f53-8352-4811f64007dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.how_to_contact_us
+    - field.field.block_content.how_to_contact_us.field_cvr
+    - field.field.block_content.how_to_contact_us.field_email
+    - field.field.block_content.how_to_contact_us.field_label_contact
+    - field.field.block_content.how_to_contact_us.field_list_1
+    - field.field.block_content.how_to_contact_us.field_list_2
+    - field.field.block_content.how_to_contact_us.field_phone
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+        components:
+          f9e7a472-4278-4905-a3e5-5e9748304f22:
+            uuid: f9e7a472-4278-4905-a3e5-5e9748304f22
+            region: first
+            configuration:
+              id: 'field_block:block_content:how_to_contact_us:field_list_1'
+              label: list-1
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          33ab560f-82c6-4222-8fb2-c92d43026b7b:
+            uuid: 33ab560f-82c6-4222-8fb2-c92d43026b7b
+            region: second
+            configuration:
+              id: 'field_block:block_content:how_to_contact_us:field_list_2'
+              label: List-2
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          854dc281-c379-45d3-ac21-a1dbbb69cabb:
+            uuid: 854dc281-c379-45d3-ac21-a1dbbb69cabb
+            region: content
+            configuration:
+              id: 'field_block:block_content:how_to_contact_us:field_phone'
+              label: Phone
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: telephone_link
+                settings:
+                  title: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          a6aca24b-0d5d-4a27-84c1-64680843654e:
+            uuid: a6aca24b-0d5d-4a27-84c1-64680843654e
+            region: content
+            configuration:
+              id: 'field_block:block_content:how_to_contact_us:field_email'
+              label: Email
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: basic_string
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          e056ca83-9363-4693-8217-ce045d4f976a:
+            uuid: e056ca83-9363-4693-8217-ce045d4f976a
+            region: content
+            configuration:
+              id: 'field_block:block_content:how_to_contact_us:field_cvr'
+              label: CVR
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: block_content.how_to_contact_us.default
+targetEntityType: block_content
+bundle: how_to_contact_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cvr:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_list_1:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_list_2:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_phone:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  field_label_contact: true

@@ -1,0 +1,20 @@
+uuid: 9e51cfeb-aee0-476d-9d36-51052e096579
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_store_footer_address
+field_name: field_store_footer_address
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 2f391db4-adad-4fb4-9c87-72256a85b97d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.how_to_contact_us
+    - field.storage.block_content.field_list_1
+  module:
+    - text
+id: block_content.how_to_contact_us.field_list_1
+field_name: field_list_1
+entity_type: block_content
+bundle: how_to_contact_us
+label: list-1
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>IOI</p>\r\n\r\n<p>Gemmel Mont 4</p>\r\n\r\n<p>DK-1117</p>\r\n\r\n<p>Copenhagen</p>\r\n\r\n<p>Denmark</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

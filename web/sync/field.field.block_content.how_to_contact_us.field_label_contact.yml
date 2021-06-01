@@ -1,0 +1,21 @@
+uuid: 92560702-cfef-4565-bb57-1bed58b4006f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.how_to_contact_us
+    - field.storage.block_content.field_label_contact
+id: block_content.how_to_contact_us.field_label_contact
+field_name: field_label_contact
+entity_type: block_content
+bundle: how_to_contact_us
+label: Label-contact
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'HOW TO CONTACT US'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 6a851f8d-19f1-40d8-b519-615062f7b975
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slider_items
+  module:
+    - text
+id: node.slider_items.body
+field_name: body
+entity_type: node
+bundle: slider_items
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

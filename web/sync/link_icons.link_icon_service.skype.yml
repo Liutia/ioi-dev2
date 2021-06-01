@@ -1,0 +1,16 @@
+uuid: 7eca3a5b-c5f7-475f-9214-374610a6bdee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uepxIeYJslNni9DM7I-DiesR3ehioWaU0mWP5mJLjU4
+id: skype
+label: Skype
+hostnames:
+  - skype.com
+class: null
+icon: skype
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#0078D7'

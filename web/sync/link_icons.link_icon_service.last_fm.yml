@@ -1,0 +1,16 @@
+uuid: bbfd3448-d87d-4727-b2a8-19e7c14ad145
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: F97f2GWUP09WePDAQuRljPVJSz02xS1cThCdC7q5rFk
+id: last_fm
+label: last.fm
+hostnames:
+  - last.fm
+class: null
+icon: lastfm
+icon_style: brand
+icon_square: lastfm-square
+icon_circle: null
+color: '#B90000'

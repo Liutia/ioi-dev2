@@ -1,0 +1,21 @@
+uuid: 67ff0ce5-edb7-48a9-933d-b365a2953453
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.how_to_contact_us
+    - field.storage.block_content.field_cvr
+id: block_content.how_to_contact_us.field_cvr
+field_name: field_cvr
+entity_type: block_content
+bundle: how_to_contact_us
+label: CVR
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'CVR: 24216209'
+default_value_callback: ''
+settings: {  }
+field_type: string

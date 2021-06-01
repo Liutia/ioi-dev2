@@ -1,0 +1,27 @@
+uuid: d4963fb2-739d-431a-b7c8-4a9758f7ba18
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: main_page_logo_2
+theme: IOI_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:cf7fc4df-7cbe-457a-b47b-db97d0a6c722'
+settings:
+  id: 'block_content:cf7fc4df-7cbe-457a-b47b-db97d0a6c722'
+  label: main_page_logo
+  provider: core
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

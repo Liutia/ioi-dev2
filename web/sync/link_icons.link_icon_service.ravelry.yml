@@ -1,0 +1,16 @@
+uuid: 75a59098-64d5-468c-a732-a96adde81991
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IaiZpcg9eoY4rhFsoj_szfIZG44ih1X-qyXgWFmY6sI
+id: ravelry
+label: Ravelry
+hostnames:
+  - ravelry.com
+class: null
+icon: ravelry
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#C5154F'

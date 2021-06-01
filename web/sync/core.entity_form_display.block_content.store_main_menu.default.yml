@@ -1,0 +1,48 @@
+uuid: e48539d0-81e2-44ee-94a4-7f7b31910305
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_main_menu
+    - field.field.block_content.store_main_menu.field_store_main_menu_cart
+    - field.field.block_content.store_main_menu.field_store_main_menu_link
+    - field.field.block_content.store_main_menu.field_store_main_menu_title
+  module:
+    - fontawesome
+    - link
+id: block_content.store_main_menu.default
+targetEntityType: block_content
+bundle: store_main_menu
+mode: default
+content:
+  field_store_main_menu_cart:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_store_main_menu_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_store_main_menu_title:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

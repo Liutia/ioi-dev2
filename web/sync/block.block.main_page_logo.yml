@@ -1,0 +1,21 @@
+uuid: 0a3f709f-7ca9-4581-a453-3d59863564fd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - IOI_theme
+id: main_page_logo
+theme: IOI_theme
+region: header
+weight: -4
+provider: null
+plugin: 'block_content:cf7fc4df-7cbe-457a-b47b-db97d0a6c722'
+settings:
+  id: 'block_content:cf7fc4df-7cbe-457a-b47b-db97d0a6c722'
+  label: main-page-logo
+  provider: core
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

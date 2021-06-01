@@ -1,0 +1,16 @@
+uuid: 5912b7f7-a7ad-437f-b9a2-e6aee952df93
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b5lGC-IrKyD4NhX2vWVW89CDIy8HiW0fDf0AQXnR_1Q
+id: apple
+label: Apple
+hostnames:
+  - apple.com
+class: null
+icon: apple
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#6E6E6E'

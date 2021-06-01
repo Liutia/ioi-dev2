@@ -1,0 +1,17 @@
+uuid: d796285f-b9fd-4938-b27a-0f7252c15081
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6RXn-AXwXJNrRgO0xGBfEa2t6xT1Cph6q6SETRkx4pk
+id: fontawesome
+label: 'Font Awesome'
+hostnames:
+  - fontawesome.com
+  - fontawesome.io
+class: font-awesome
+icon: font-awesome
+icon_style: brand
+icon_square: font-awesome-alt
+icon_circle: null
+color: 'rgb(51, 154, 240)'

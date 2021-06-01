@@ -1,0 +1,16 @@
+uuid: 402065b8-790a-45be-a219-72c4f20aab4e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TetUSZdUsS5GK8wfQsXRrqUYAraI3TpPZgIVZh_cr_o
+id: viadeo
+label: Viadeo
+hostnames:
+  - viadeo.com
+class: null
+icon: viadeo
+icon_style: brand
+icon_square: viadeo-square
+icon_circle: null
+color: '#EA6725'

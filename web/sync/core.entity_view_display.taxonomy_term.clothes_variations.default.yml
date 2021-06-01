@@ -1,0 +1,75 @@
+uuid: 18a1b451-0280-44ce-af26-aeb0200c3d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.clothes_variations.field_term_
+    - taxonomy.vocabulary.clothes_variations
+  module:
+    - ds
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - taxonomy_term_title
+        - field_term_
+        - description
+        - taxonomy_term_link
+    fields:
+      taxonomy_term_title:
+        plugin_id: taxonomy_term_title
+        weight: 0
+        label: hidden
+        formatter: default
+      taxonomy_term_link:
+        plugin_id: taxonomy_term_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Change this txt!'
+          'link class': ''
+          wrapper: ''
+          class: ''
+id: taxonomy_term.clothes_variations.default
+targetEntityType: taxonomy_term
+bundle: clothes_variations
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+  field_term_:
+    type: entity_reference_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: ds_content
+hidden: {  }

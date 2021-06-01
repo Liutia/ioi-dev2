@@ -1,0 +1,28 @@
+uuid: 701f133d-fefa-477b-b835-9712b4ceafa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instagram_items.field_img1
+    - image.style.thumbnail
+    - node.type.instagram_items
+  module:
+    - media
+    - user
+id: node.instagram_items.teaser
+targetEntityType: node
+bundle: instagram_items
+mode: teaser
+content:
+  field_img1:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true

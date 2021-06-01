@@ -1,0 +1,29 @@
+uuid: ba557c13-2209-48a2-82ab-9bbc7d065d92
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.store_slider
+  module:
+    - system
+    - views
+  theme:
+    - IOI_theme
+id: views_block__store_slider_block_1
+theme: IOI_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:store_slider-block_1'
+settings:
+  id: 'views_block:store_slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: false

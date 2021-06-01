@@ -1,0 +1,23 @@
+uuid: 9f24e96b-5767-4bb5-9c0d-a1d08ef00b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_for_main_news_and_main_hit
+    - field.storage.block_content.field_nh_read_more
+  module:
+    - link
+id: block_content.block_for_main_news_and_main_hit.field_nh_read_more
+field_name: field_nh_read_more
+entity_type: block_content
+bundle: block_for_main_news_and_main_hit
+label: NH_read_more
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

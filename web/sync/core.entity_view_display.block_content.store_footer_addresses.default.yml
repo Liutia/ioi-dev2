@@ -1,0 +1,42 @@
+uuid: d764f3f8-f161-44d2-a3d4-6bf72132be7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_footer_addresses
+    - field.field.block_content.store_footer_addresses.field_store_footer_address
+    - field.field.block_content.store_footer_addresses.field_store_footer_email
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.store_footer_addresses.default
+targetEntityType: block_content
+bundle: store_footer_addresses
+mode: default
+content:
+  field_address:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_store_footer_address:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_store_footer_email:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

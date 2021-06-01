@@ -1,0 +1,15 @@
+uuid: 84c333f9-44f3-48ad-95af-12e4ef967bdb
+langcode: en
+status: true
+dependencies: {  }
+name: 36x22_for_payment
+label: '36x22 for payment'
+effects:
+  e2637f47-dbec-4544-a99c-d5013cda2a49:
+    uuid: e2637f47-dbec-4544-a99c-d5013cda2a49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 32
+      height: 22
+      anchor: center-center

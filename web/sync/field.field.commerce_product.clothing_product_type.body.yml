@@ -1,0 +1,23 @@
+uuid: abb2083b-d5d1-4966-9bed-f45224381835
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.clothing_product_type
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.clothing_product_type.body
+field_name: body
+entity_type: commerce_product
+bundle: clothing_product_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

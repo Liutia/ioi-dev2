@@ -1,0 +1,10 @@
+uuid: dd5eb4e7-ee9d-4097-9c62-3b8cb15c8a37
+langcode: en
+status: true
+dependencies: {  }
+id: clothing_order_variation_type
+label: 'Clothing order variation type'
+orderItemType: clothing_order_type
+generateTitle: true
+traits: {  }
+locked: false

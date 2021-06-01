@@ -1,0 +1,17 @@
+uuid: f97fa6df-d4dd-4a9a-8b9a-a77790210c4e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: x53BNSELbFzr91bc0ITVZq941t9vQgcV9_9faulO6Aw
+id: slideshare
+label: Slideshare
+hostnames:
+  - slideshare.com
+  - slideshare.net
+class: null
+icon: slideshare
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

@@ -1,0 +1,16 @@
+uuid: 25a37997-346c-41ad-8dca-b63a224ffb87
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pDLwfYXsUnXrgvVf7eaqFRelaWQT5UyXjGnyRx1ZSi4
+id: linode
+label: Linode
+hostnames:
+  - linode.com
+class: null
+icon: linode
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#00B259'

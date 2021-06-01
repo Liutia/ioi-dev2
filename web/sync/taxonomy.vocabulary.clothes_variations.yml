@@ -1,0 +1,8 @@
+uuid: 3f4f88ec-dbc6-484a-a085-fb1bd2925d23
+langcode: en
+status: true
+dependencies: {  }
+name: Clothes-variations
+vid: clothes_variations
+description: 't-shirt / sweatshirt / hoodie'
+weight: 0

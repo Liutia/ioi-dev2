@@ -1,0 +1,22 @@
+uuid: 2c49f191-2f2b-426b-9896-04549757b64c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.instagram_items
+id: node.instagram_items.promote
+field_name: promote
+entity_type: node
+bundle: instagram_items
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

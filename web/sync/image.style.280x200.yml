@@ -1,0 +1,15 @@
+uuid: 8bd9f5d9-c7be-4b8c-ab17-ce67a1cd3eb6
+langcode: en
+status: true
+dependencies: {  }
+name: 280x200
+label: 280x200
+effects:
+  c37e18f9-2be9-4a86-8822-09e7e2db9cc2:
+    uuid: c37e18f9-2be9-4a86-8822-09e7e2db9cc2
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 200
+      height: 280
+      anchor: center-center

@@ -1,0 +1,29 @@
+uuid: b4869b7e-0666-461a-b1f3-e7878895b49c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.follow_us_on_instagram
+  module:
+    - system
+    - views
+  theme:
+    - IOI_theme
+id: views_block__follow_us_on_instagram_block_1
+theme: IOI_theme
+region: footer_second
+weight: -13
+provider: null
+plugin: 'views_block:follow_us_on_instagram-block_1'
+settings:
+  id: 'views_block:follow_us_on_instagram-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

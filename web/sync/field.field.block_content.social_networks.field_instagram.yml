@@ -1,0 +1,28 @@
+uuid: df9ce409-2612-4f38-ab0d-a76a13574269
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_networks
+    - field.storage.block_content.field_instagram
+  module:
+    - link
+id: block_content.social_networks.field_instagram
+field_name: field_instagram
+entity_type: block_content
+bundle: social_networks
+label: instagram
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'https://www.instagram.com/dj.strayder/'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

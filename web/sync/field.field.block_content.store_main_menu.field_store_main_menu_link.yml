@@ -1,0 +1,28 @@
+uuid: 1b67e7bc-5d68-4604-921f-342bc77a8a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_main_menu
+    - field.storage.block_content.field_store_main_menu_link
+  module:
+    - link
+id: block_content.store_main_menu.field_store_main_menu_link
+field_name: field_store_main_menu_link
+entity_type: block_content
+bundle: store_main_menu
+label: store_main_menu_link
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/store'
+    title: HOME
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

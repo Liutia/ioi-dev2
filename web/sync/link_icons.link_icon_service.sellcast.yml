@@ -1,0 +1,16 @@
+uuid: dae3d296-cc69-44ef-b3fa-167ad24122b4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6Zr8PMcNIBoyx44mtGjlCrZQbo62dsdlHUGOfuWHlXw
+id: sellcast
+label: Sellcast
+hostnames:
+  - sellcast.com
+class: null
+icon: sellcast
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#F15B2F'

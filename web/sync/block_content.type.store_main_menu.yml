@@ -1,0 +1,8 @@
+uuid: fd6e0485-9d1a-4c03-aa44-bfb0131c7f32
+langcode: en
+status: true
+dependencies: {  }
+id: store_main_menu
+label: store_main_menu
+revision: 0
+description: ''

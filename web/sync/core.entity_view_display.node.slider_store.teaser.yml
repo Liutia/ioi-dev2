@@ -1,0 +1,58 @@
+uuid: b90bd95e-db5c-4c94-af9c-1a2980817296
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_store.body
+    - field.field.node.slider_store.field_slider_store_image
+    - field.field.node.slider_store.field_slider_store_link
+    - field.field.node.slider_store.field_stop
+    - field.field.node.slider_store.field_stop_play
+    - node.type.slider_store
+  module:
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.slider_store.teaser
+targetEntityType: node
+bundle: slider_store
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_slider_store_image:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_slider_store_link:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  field_stop: true
+  field_stop_play: true
+  links: true

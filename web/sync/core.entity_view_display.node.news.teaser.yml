@@ -1,0 +1,133 @@
+uuid: b528d252-3385-4442-8ed0-85d948f10f0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news.body
+    - field.field.node.news.field_news_category
+    - field.field.node.news.field_news_date
+    - field.field.node.news.field_news_image
+    - node.type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          52328966-c9bd-445b-83b1-3560a24c5897:
+            uuid: 52328966-c9bd-445b-83b1-3560a24c5897
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_news_image'
+              label: News-image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: '550_550'
+                  image_link: content
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f6474fb1-15bc-49f4-8ba9-a14a2ab645b0:
+            uuid: f6474fb1-15bc-49f4-8ba9-a14a2ab645b0
+            region: content
+            configuration:
+              id: 'field_block:node:news:field_news_date'
+              label: News-date
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: datetime_custom
+                settings:
+                  timezone_override: ''
+                  date_format: 'M d. Y'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          2a8fb84a-9cb6-4a58-8a78-8ca60d67b3f6:
+            uuid: 2a8fb84a-9cb6-4a58-8a78-8ca60d67b3f6
+            region: content
+            configuration:
+              id: 'field_block:node:news:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          eb50456b-7bf2-417a-9a59-6482d4846954:
+            uuid: eb50456b-7bf2-417a-9a59-6482d4846954
+            region: content
+            configuration:
+              id: 'field_block:node:news:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 400
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: node.news.teaser
+targetEntityType: node
+bundle: news
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_news_category: true
+  field_news_date: true
+  field_news_image: true

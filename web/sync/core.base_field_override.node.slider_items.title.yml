@@ -1,0 +1,18 @@
+uuid: 3decf532-9185-466c-bac8-c8674ecdfaee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider_items
+id: node.slider_items.title
+field_name: title
+entity_type: node
+bundle: slider_items
+label: slider-items
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

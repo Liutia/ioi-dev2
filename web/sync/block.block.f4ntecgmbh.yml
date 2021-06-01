@@ -1,0 +1,30 @@
+uuid: 889222cc-5bcc-4f6a-a404-67d9817082bb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:store_footer_addresses:e41661d0-6593-478b-bd9a-8b7c4f23d8f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: f4ntecgmbh
+theme: IOI_theme
+region: footer_second
+weight: -12
+provider: null
+plugin: 'block_content:e41661d0-6593-478b-bd9a-8b7c4f23d8f2'
+settings:
+  id: 'block_content:e41661d0-6593-478b-bd9a-8b7c4f23d8f2'
+  label: 'F4NTEC GmbH'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /store
+    negate: false

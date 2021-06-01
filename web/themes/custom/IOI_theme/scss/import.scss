@@ -1,0 +1,33 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+// typography
+@import "typography";
+//bootstrap
+@import "bootstrap";
+//material design bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
+// mixins
+@import "mixins";
+// barrio
+@import "barrio";
+// header
+@import "mainpage-header-menu";
+//news
+@import "news-views";
+//main-page-footer
+@import "main-page-footer";
+//store-page-footer
+@import "store-page-footer";
+// header-slider
+@import "main-page-header-slider";
+// main-page-section-team
+@import "main-page-section-team";
+// main-page-section-hitman
+@import "main-page-section-hitman";
+// store-3-blocks
+@import "store-3-blocks";
+// store-main-menu
+@import "store-main-menu";

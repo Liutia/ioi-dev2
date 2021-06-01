@@ -1,0 +1,16 @@
+uuid: 9f5da539-2b12-4748-8153-d3e04d9e398a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sYB3I5v4dthZeLJe8yAcAFNg_ZShnqekBkBTOgtT-58
+id: stackoverflow
+label: 'Stack Overflow'
+hostnames:
+  - stackoverflow.com
+class: stack-overflow
+icon: stack-overflow
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#FE7A15'

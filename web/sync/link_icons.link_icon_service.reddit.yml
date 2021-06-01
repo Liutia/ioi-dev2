@@ -1,0 +1,16 @@
+uuid: 75fe0369-8246-46af-9c07-1cbaa94ce818
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 96UbaEBX5P3UK6IDGUTk1JTLQ3pRSpvRAgi4KgYt7Zs
+id: reddit
+label: Reddit
+hostnames:
+  - reddit.com
+class: null
+icon: reddit-alien
+icon_style: brand
+icon_square: reddit-square
+icon_circle: reddit
+color: '#FF4500'

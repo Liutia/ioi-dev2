@@ -1,0 +1,132 @@
+uuid: 7e28e65f-edaf-4567-9308-2bca332127b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.shop_tsk18
+    - field.field.block_content.shop_tsk18.body
+    - field.field.block_content.shop_tsk18.field_shop_tsk18_img
+    - field.field.block_content.shop_tsk18.field_shop_tsk18_tax
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b6b50d74-cbf8-4105-bf95-5fca0ac07427:
+            uuid: b6b50d74-cbf8-4105-bf95-5fca0ac07427
+            region: content
+            configuration:
+              id: 'field_block:block_content:shop_tsk18:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          7106a626-dd62-40ab-a7ea-65979053665d:
+            uuid: 7106a626-dd62-40ab-a7ea-65979053665d
+            region: content
+            configuration:
+              id: 'field_block:block_content:shop_tsk18:field_shop_tsk18_tax'
+              label: shop_tsk18_tax
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          50f90dbd-ab34-4114-905e-a05f3111aad3:
+            uuid: 50f90dbd-ab34-4114-905e-a05f3111aad3
+            region: content
+            configuration:
+              id: 'field_block:block_content:shop_tsk18:field_shop_tsk18_img'
+              label: shop_tsk18_img
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          944a1125-aeb3-432e-a793-98d64cee263e:
+            uuid: 944a1125-aeb3-432e-a793-98d64cee263e
+            region: content
+            configuration:
+              id: 'field_block:block_content:shop_tsk18:field_shop_tsk18_tax'
+              label: shop_tsk18_tax
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: block_content.shop_tsk18.default
+targetEntityType: block_content
+bundle: shop_tsk18
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_shop_tsk18_img:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_shop_tsk18_tax:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

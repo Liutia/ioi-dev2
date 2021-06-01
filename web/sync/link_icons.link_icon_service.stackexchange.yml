@@ -1,0 +1,16 @@
+uuid: 1302fa37-9218-4239-b1f5-302b481d29d0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 47ZiZ3XPAc4L4ZiqdzsNpimBLnHiq18WgQ20YnBZdJo
+id: stackexchange
+label: 'Stack Exchange'
+hostnames:
+  - stackexchange.com
+class: stack-exchange
+icon: stack-exchange
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#195398'

@@ -1,0 +1,87 @@
+.path-store{
+  .news.container{
+    .block-block-content{
+      font-family: "MaisonNeueMono", sans-serif;
+      width: 33%;
+      .layout__region--content{
+        .block-field-blockblock-contentshop-tsk18field-shop-tsk18-tax{
+          font-weight: 600;
+          img{
+            margin: 0 auto;
+            max-width: 360px;
+            max-height: 360px;
+          }
+          a{
+            text-decoration: none;
+            color: $clr-btn-red;
+            border: $clr-btn-red 1px solid;
+            padding: 5px 10px;
+            font-weight: normal;
+            transition: 0.5s;
+            &:hover{
+              border: $clr-btn-red 1px solid;
+              color: $clr-btn-red-hover;
+            }
+          }
+        }
+        .block-field-blockblock-contentshop-tsk18body{
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}
+
+// ADAPTIVE
+
+@media (max-width: 991px) {
+  .path-store {
+    .news.container{
+      .region-featured-bottom-first{
+        display: flex;
+        flex-direction: column;
+        .block-block-content{
+          margin: 0 auto;
+          text-align: center;
+          img{
+            margin: 0 auto;
+            max-width: 250px;
+            max-height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .path-store {
+    .news.container{
+      .region-featured-bottom-first{
+        .block-block-content{
+          font-size: 10px;
+          img{
+            margin: 0 auto;
+            max-width: 150px;
+            max-height: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .path-store {
+    .news.container{
+      .region-featured-bottom-first{
+        .block-block-content{
+          font-size: 10px;
+          img{
+            margin: 0 auto;
+            max-width: 70px;
+            max-height: 70px;
+          }
+        }
+      }
+    }
+  }
+}

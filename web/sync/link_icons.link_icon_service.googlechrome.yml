@@ -1,0 +1,16 @@
+uuid: aac00a4c-fa99-498b-a9a4-5c5b7250341a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pp2dWcx69kdw775KasnZkYdWTdLP82YT1UFjzIrRyiU
+id: googlechrome
+label: 'Google Chrome'
+hostnames:
+  - chrome.google.com
+class: google-chrome
+icon: chrome
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#E04B40'

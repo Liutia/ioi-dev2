@@ -1,0 +1,10 @@
+uuid: 8bf18783-b5da-42cc-87fb-1fc76b56a5ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.product_view_s
+label: 'product view mode'
+targetEntityType: commerce_product
+cache: true

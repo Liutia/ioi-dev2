@@ -1,0 +1,30 @@
+#block-headersliderbuttons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 15vw;
+  .header-slider-buttons-wrapper{
+    display: flex;
+    gap: 10px;
+    .left-slider-button, .right-slider-button{
+      a{
+        background: rgb(252,32,40);
+        background: linear-gradient(135deg, rgba(252,32,40,1) 85%, rgba(255,255,255,0.9345939059217437) 85%);
+        padding: 1.3vw;
+        display: block;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        color: $clr-white;
+        &:hover{
+          background: rgb(255,255,255);
+          background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(252,32,40,1) 85%);
+          color: $clr-black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+uuid: d7c63679-2097-4069-9197-078d4012c11b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.how_to_contact_us
+    - field.storage.block_content.field_list_2
+  module:
+    - text
+id: block_content.how_to_contact_us.field_list_2
+field_name: field_list_2
+entity_type: block_content
+bundle: how_to_contact_us
+label: List-2
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>IOI Malmö</p>\r\n\r\n<p>Torggatan 2</p>\r\n\r\n<p>SE-21 140</p>\r\n\r\n<p>Malmö</p>\r\n\r\n<p>Sweden</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

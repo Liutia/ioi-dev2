@@ -1,0 +1,28 @@
+uuid: 857a91e9-7b0c-45a5-aa53-d8b93aa702d9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: beHnzJqrZZlUcTn6YqbZhPhBoXjCavF7ln9Osef865o
+id: amazon
+label: Amazon
+hostnames:
+  - amazon.com
+  - amazon.com.au
+  - amazon.com.br
+  - amazon.com.mx
+  - amazon.ca
+  - amazon.cn
+  - amazon.co.uk
+  - amazon.co.jp
+  - amazon.de
+  - amazon.es
+  - amazon.fr
+  - amazon.in
+  - amazon.nl
+class: null
+icon: amazon
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

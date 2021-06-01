@@ -1,0 +1,84 @@
+uuid: d97184e0-b98f-4b5e-b2ba-b73519bbdb31
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_networks
+    - field.field.block_content.social_networks.field_facebook
+    - field.field.block_content.social_networks.field_icons
+    - field.field.block_content.social_networks.field_instagram
+    - field.field.block_content.social_networks.field_linkedin
+    - field.field.block_content.social_networks.field_social_link
+    - field.field.block_content.social_networks.field_twitter
+    - field.field.block_content.social_networks.field_youtube
+  module:
+    - fontawesome
+    - link
+id: block_content.social_networks.default
+targetEntityType: block_content
+bundle: social_networks
+mode: default
+content:
+  field_facebook:
+    weight: 28
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_icons:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: fontawesome_icon_widget
+    region: content
+  field_instagram:
+    weight: 31
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_linkedin:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_social_link:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_twitter:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_youtube:
+    weight: 30
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

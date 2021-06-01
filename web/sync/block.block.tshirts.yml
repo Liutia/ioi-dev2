@@ -1,0 +1,27 @@
+uuid: 9125ee5c-164a-45c6-818f-7da4777c0712
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: tshirts
+theme: IOI_theme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:efccdbca-7624-4d55-9c01-7bccc6f59e34'
+settings:
+  id: 'block_content:efccdbca-7624-4d55-9c01-7bccc6f59e34'
+  label: Tshirts
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /store
+    negate: false

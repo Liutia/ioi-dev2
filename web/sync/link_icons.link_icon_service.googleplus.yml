@@ -1,0 +1,16 @@
+uuid: ff4bed21-c5f9-4a36-8356-6fcb26b7351d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xxY2agix7uTSJLN2pRHD3twKUNQC2BzmIVIgYQB-ia8
+id: googleplus
+label: 'Google Plus'
+hostnames:
+  - plus.google.com
+class: google-plus
+icon: google-plus-g
+icon_style: brand
+icon_square: google-plus-square
+icon_circle: google-plus
+color: '#DD4B39'

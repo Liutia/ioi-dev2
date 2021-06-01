@@ -1,0 +1,9 @@
+uuid: 1f48cb4b-c871-460a-bc30-5fbe68d6047a
+langcode: en
+status: true
+dependencies: {  }
+id: online_clothing_s
+label: 'Online clothing store'
+description: ''
+traits: {  }
+locked: false

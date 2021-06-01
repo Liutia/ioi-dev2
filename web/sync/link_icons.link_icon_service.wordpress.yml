@@ -1,0 +1,17 @@
+uuid: f5440f2c-a798-4bda-aba7-5366ec07e2f0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vyuwHRUjL5i0LGCm8-tobCJeRF_L2txyVBoY3fa_MqA
+id: wordpress
+label: WordPress
+hostnames:
+  - wordpress.com
+  - wordpress.org
+class: null
+icon: wordpress-simple
+icon_style: brand
+icon_square: null
+icon_circle: wordpress
+color: '#0074A2'

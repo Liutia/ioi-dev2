@@ -1,0 +1,21 @@
+uuid: 2a256a06-ddd1-4a6f-8bb9-2d965e42c7d4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - IOI_theme
+id: hitman3
+theme: IOI_theme
+region: featured_bottom_third
+weight: -15
+provider: null
+plugin: 'block_content:80915d0b-ff08-4cf0-8e6a-6ce77937d1fd'
+settings:
+  id: 'block_content:80915d0b-ff08-4cf0-8e6a-6ce77937d1fd'
+  label: 'HITMAN 3'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

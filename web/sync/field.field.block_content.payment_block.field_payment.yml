@@ -1,0 +1,82 @@
+uuid: 8f6b0354-dc40-42c1-b8ef-2d550eefaaf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.payment_block
+    - field.storage.block_content.field_payment
+    - media.type.image
+  content:
+    - 'media:image:02db627f-13d3-40f6-a2f2-1b0d9f44131d'
+    - 'media:image:17d8a9e2-64a8-41c3-9925-56ff8583dc44'
+    - 'media:image:1db92525-443c-4eb3-9b02-0be2b91b6559'
+    - 'media:image:2525c381-512a-4924-a46e-65203d7cb81c'
+    - 'media:image:59d5d952-5745-415a-a385-364ca910161f'
+    - 'media:image:5bb7fde1-578f-46ba-8f66-5f5e4c39806a'
+    - 'media:image:60931519-6cae-4c48-bf84-f4510b7dc4f8'
+    - 'media:image:65defbca-d6e8-4f73-87e6-c1e2219368c8'
+    - 'media:image:6754b69f-5562-41db-bcb7-ffc925392e3e'
+    - 'media:image:9d2f7a33-98cd-4b81-8e2c-2feee2c7a90c'
+    - 'media:image:a4495863-01f2-4dfd-9bc3-8c62ef073a3d'
+    - 'media:image:b60bf034-0501-44b2-b39c-5f486e3eb11e'
+    - 'media:image:ea8b552d-bd95-433b-bc92-5ccc81657246'
+id: block_content.payment_block.field_payment
+field_name: field_payment
+entity_type: block_content
+bundle: payment_block
+label: payment
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    weight: '0'
+    target_uuid: 9d2f7a33-98cd-4b81-8e2c-2feee2c7a90c
+  -
+    weight: '1'
+    target_uuid: 2525c381-512a-4924-a46e-65203d7cb81c
+  -
+    weight: '2'
+    target_uuid: 1db92525-443c-4eb3-9b02-0be2b91b6559
+  -
+    weight: '3'
+    target_uuid: a4495863-01f2-4dfd-9bc3-8c62ef073a3d
+  -
+    weight: '4'
+    target_uuid: 02db627f-13d3-40f6-a2f2-1b0d9f44131d
+  -
+    weight: '5'
+    target_uuid: 60931519-6cae-4c48-bf84-f4510b7dc4f8
+  -
+    weight: '6'
+    target_uuid: 5bb7fde1-578f-46ba-8f66-5f5e4c39806a
+  -
+    weight: '7'
+    target_uuid: 59d5d952-5745-415a-a385-364ca910161f
+  -
+    weight: '8'
+    target_uuid: 17d8a9e2-64a8-41c3-9925-56ff8583dc44
+  -
+    weight: '9'
+    target_uuid: 65defbca-d6e8-4f73-87e6-c1e2219368c8
+  -
+    weight: '10'
+    target_uuid: b60bf034-0501-44b2-b39c-5f486e3eb11e
+  -
+    weight: '11'
+    target_uuid: ea8b552d-bd95-433b-bc92-5ccc81657246
+  -
+    weight: '12'
+    target_uuid: 6754b69f-5562-41db-bcb7-ffc925392e3e
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

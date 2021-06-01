@@ -1,0 +1,16 @@
+uuid: e5dc06c4-3e76-4403-907f-2fa4aa3eda51
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bSbReeRV2Sbrnd3RXIHCSJph8A-VelXrLlPEyKCpGAA
+id: mixcloud
+label: Mixcloud
+hostnames:
+  - mixcloud.com
+class: null
+icon: mixcloud
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: black

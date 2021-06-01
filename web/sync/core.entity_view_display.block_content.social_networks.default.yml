@@ -1,0 +1,107 @@
+uuid: ebaeb30b-0c66-4e1a-b253-eadf73bf5b78
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_networks
+    - field.field.block_content.social_networks.field_facebook
+    - field.field.block_content.social_networks.field_icons
+    - field.field.block_content.social_networks.field_instagram
+    - field.field.block_content.social_networks.field_linkedin
+    - field.field.block_content.social_networks.field_social_link
+    - field.field.block_content.social_networks.field_twitter
+    - field.field.block_content.social_networks.field_youtube
+  module:
+    - fontawesome
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.social_networks.default
+targetEntityType: block_content
+bundle: social_networks
+mode: default
+content:
+  field_facebook:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_icons:
+    weight: 6
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_instagram:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_linkedin:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_social_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_twitter:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_youtube:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

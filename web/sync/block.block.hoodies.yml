@@ -1,0 +1,27 @@
+uuid: 8a36433d-b1ba-402b-b7c1-0e5c33097147
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: hoodies
+theme: IOI_theme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:98faa87c-c33c-4748-bac9-281b8fdcac30'
+settings:
+  id: 'block_content:98faa87c-c33c-4748-bac9-281b8fdcac30'
+  label: Hoodies
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /store
+    negate: false

@@ -1,0 +1,27 @@
+uuid: 6ebbaa0f-3488-4c27-ad20-6c4b121d058b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: sweatshirts
+theme: IOI_theme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'block_content:6104948c-9cdb-4759-8b61-f1a176b5a81e'
+settings:
+  id: 'block_content:6104948c-9cdb-4759-8b61-f1a176b5a81e'
+  label: Sweatshirts
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /store
+    negate: false

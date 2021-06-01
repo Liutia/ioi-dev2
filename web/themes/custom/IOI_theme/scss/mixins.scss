@@ -1,0 +1,19 @@
+@mixin news-br ($col, $wid){
+  &:after {
+    content: "";
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom-color: $col;
+    border-bottom-width: $wid;
+    border-bottom-style: solid;
+    border-left: $wid solid transparent;
+    margin-left: auto;
+    position: inherit;
+    margin-bottom: -8px;
+    margin-top: -120px;
+    margin-right: -16px;
+  }
+}

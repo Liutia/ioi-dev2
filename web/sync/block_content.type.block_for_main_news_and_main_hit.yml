@@ -1,0 +1,8 @@
+uuid: 2cdf8df0-4d40-43b4-9c3b-9fc1854da3c7
+langcode: en
+status: true
+dependencies: {  }
+id: block_for_main_news_and_main_hit
+label: Block_for_main_news_and_main_hitman
+revision: 0
+description: ''

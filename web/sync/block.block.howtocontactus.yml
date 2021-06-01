@@ -1,0 +1,30 @@
+uuid: 0a54c3e8-b70b-4abf-975b-7ee8a8015e31
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:how_to_contact_us:cbadf55e-7473-4e74-b815-bdceb5ce7a46'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: howtocontactus
+theme: IOI_theme
+region: footer_second
+weight: -15
+provider: null
+plugin: 'block_content:cbadf55e-7473-4e74-b815-bdceb5ce7a46'
+settings:
+  id: 'block_content:cbadf55e-7473-4e74-b815-bdceb5ce7a46'
+  label: 'HOW TO CONTACT US'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

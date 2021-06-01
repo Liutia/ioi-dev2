@@ -1,0 +1,16 @@
+uuid: cff5194f-70bb-4ae1-9a2e-420fd7353438
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jYeD1Cq9OLC7ykezybi7N_Umq9Gkf43BEq0n5oET09w
+id: vine
+label: Vine
+hostnames:
+  - vine.co
+class: null
+icon: vine
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#00BF8F'

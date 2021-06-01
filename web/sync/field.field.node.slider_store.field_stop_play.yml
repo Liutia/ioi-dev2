@@ -1,0 +1,21 @@
+uuid: 320c7608-57d0-4010-9667-b06e71bf1cba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stop_play
+    - node.type.slider_store
+  module:
+    - fontawesome
+id: node.slider_store.field_stop_play
+field_name: field_stop_play
+entity_type: node
+bundle: slider_store
+label: stop
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

@@ -1,0 +1,55 @@
+uuid: 19bd301e-7c61-4ba3-9ead-5cb58c57eaa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_main_menu
+    - field.field.block_content.store_main_menu.field_store_main_menu_cart
+    - field.field.block_content.store_main_menu.field_store_main_menu_link
+    - field.field.block_content.store_main_menu.field_store_main_menu_title
+  module:
+    - fontawesome
+    - layout_builder
+    - link
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.store_main_menu.default
+targetEntityType: block_content
+bundle: store_main_menu
+mode: default
+content:
+  field_store_main_menu_cart:
+    weight: 3
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    type: fontawesome_icon_formatter
+    region: content
+  field_store_main_menu_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_store_main_menu_title:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

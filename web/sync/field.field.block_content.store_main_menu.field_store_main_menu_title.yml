@@ -1,0 +1,28 @@
+uuid: 705db78c-8a5d-474b-8c68-2fce7c4300a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_main_menu
+    - field.storage.block_content.field_store_main_menu_title
+  module:
+    - link
+id: block_content.store_main_menu.field_store_main_menu_title
+field_name: field_store_main_menu_title
+entity_type: block_content
+bundle: store_main_menu
+label: store_main_menu_title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/store'
+    title: 'IOI EU MERCH STORE | BY F4NTEC'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

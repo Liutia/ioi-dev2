@@ -1,0 +1,8 @@
+uuid: 412a5a02-1a1b-4ecd-8767-d0b710bfceca
+langcode: en
+status: true
+dependencies: {  }
+name: News-taxonomy
+vid: news_taxonomy
+description: ''
+weight: 0

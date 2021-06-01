@@ -1,0 +1,55 @@
+uuid: 53b415ec-45d3-4d76-9a7c-5976e1a4a01f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.shop_tsk18
+    - field.field.block_content.shop_tsk18.body
+    - field.field.block_content.shop_tsk18.field_shop_tsk18_img
+    - field.field.block_content.shop_tsk18.field_shop_tsk18_tax
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.shop_tsk18.default
+targetEntityType: block_content
+bundle: shop_tsk18
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_shop_tsk18_img:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_shop_tsk18_tax:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

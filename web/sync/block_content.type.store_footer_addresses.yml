@@ -1,0 +1,8 @@
+uuid: 0a815aa8-6bfe-4ec3-b1ee-c09decf36841
+langcode: en
+status: true
+dependencies: {  }
+id: store_footer_addresses
+label: store-footer-addresses
+revision: 0
+description: ''

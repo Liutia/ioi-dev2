@@ -1,0 +1,19 @@
+uuid: cd7c170f-6588-4bee-b941-4d81b6513c7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_footer_addresses
+    - field.storage.block_content.field_store_footer_email
+id: block_content.store_footer_addresses.field_store_footer_email
+field_name: field_store_footer_email
+entity_type: block_content
+bundle: store_footer_addresses
+label: store-footer-email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

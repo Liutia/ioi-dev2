@@ -1,0 +1,22 @@
+uuid: 846aa178-476c-4674-b432-7a8545a1b0cf
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - IOI_theme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: IOI_theme_powered
+theme: IOI_theme
+region: header
+weight: -3
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

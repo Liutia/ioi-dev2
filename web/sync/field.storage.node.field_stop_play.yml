@@ -1,0 +1,19 @@
+uuid: 4c5a372c-8f3a-4181-95cc-a42b94495c71
+langcode: en
+status: true
+dependencies:
+  module:
+    - fontawesome
+    - node
+id: node.field_stop_play
+field_name: field_stop_play
+entity_type: node
+type: fontawesome_icon
+settings: {  }
+module: fontawesome
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

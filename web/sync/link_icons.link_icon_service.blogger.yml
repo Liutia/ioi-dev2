@@ -1,0 +1,16 @@
+uuid: f764e32a-feb4-4dcf-a005-4e1cb08daae2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-s1s_LKljwmnWxN-e7nA6GVq8vAzKhgvqlIHqHMsNiw'
+id: blogger
+label: Blogger
+hostnames:
+  - blogger.com
+class: null
+icon: blogger-b
+icon_style: brand
+icon_square: blogger
+icon_circle: null
+color: '#F57C00'

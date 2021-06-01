@@ -1,0 +1,8 @@
+uuid: c97e3af0-0b81-4a8a-9547-e24cec44782e
+langcode: en
+status: true
+dependencies: {  }
+id: payment_block
+label: payment_block
+revision: 0
+description: ''

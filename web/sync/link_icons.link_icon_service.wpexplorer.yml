@@ -1,0 +1,16 @@
+uuid: f7b8056a-e2b8-4b70-b2e4-b02250b8e69f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tPxX2T1RLhI-YijBq4Cc_AaLh2HjzHnaQPHiVMX_ahU
+id: wpexplorer
+label: WPExplorer
+hostnames:
+  - wpexplorer.com
+class: null
+icon: wpexplorer
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#1796C6'

@@ -1,0 +1,30 @@
+uuid: a5678e16-037f-41e2-8911-80b3f9f990d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.payment_block
+    - field.field.block_content.payment_block.field_payment
+  module:
+    - media_library
+id: block_content.payment_block.default
+targetEntityType: block_content
+bundle: payment_block
+mode: default
+content:
+  field_payment:
+    type: media_library_widget
+    weight: 26
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

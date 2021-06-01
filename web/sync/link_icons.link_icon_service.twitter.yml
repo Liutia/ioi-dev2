@@ -1,0 +1,16 @@
+uuid: 05b53d48-3736-4013-9e70-ec5eda221079
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2j26WDQ9aIR83Zj0eC0CIzKB-fQwdE4o6lWJWmnWAVg
+id: twitter
+label: Twitter
+hostnames:
+  - twitter.com
+class: null
+icon: twitter
+icon_style: brand
+icon_square: twitter-square
+icon_circle: null
+color: '#00ACEE'

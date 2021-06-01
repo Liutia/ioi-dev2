@@ -1,0 +1,20 @@
+uuid: 447ac8dd-bb41-456f-805e-eec816b8c5ab
+langcode: en
+status: true
+dependencies:
+  theme:
+    - IOI_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: IOI_theme_local_actions
+theme: IOI_theme
+region: content
+weight: -11
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

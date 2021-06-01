@@ -1,0 +1,16 @@
+uuid: 8c1e2e3c-5640-46a8-be47-01d999aebea2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 55V8y8WloFsY3WDK2Jh6x-ATUgdY3fXMX3E_ukIYaeA
+id: slack
+label: Slack
+hostnames:
+  - slack.com
+class: null
+icon: slack
+icon_style: brand
+icon_square: null
+icon_circle: null
+color: '#481449'
