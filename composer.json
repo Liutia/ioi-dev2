@@ -23,6 +23,8 @@
         "drupal/bootstrap_barrio": "^5.1",
         "drupal/bootstrap_sass": "^5.0",
         "drupal/commerce": "^2.24",
+        "drupal/commerce_currency_resolver": "^1.60",
+        "drupal/commerce_exchanger": "^1.20",
         "drupal/commerce_paypal": "^1.0@RC",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
