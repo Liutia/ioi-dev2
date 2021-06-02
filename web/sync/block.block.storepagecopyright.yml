@@ -12,7 +12,7 @@ dependencies:
 id: storepagecopyright
 theme: IOI_theme
 region: footer_third
-weight: -21
+weight: -20
 provider: null
 plugin: 'block_content:05a7fd02-7a02-4276-a336-742d1076264a'
 settings:

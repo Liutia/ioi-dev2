@@ -12,7 +12,7 @@ dependencies:
 id: payment_2
 theme: IOI_theme
 region: footer_third
-weight: -23
+weight: -22
 provider: null
 plugin: 'block_content:9c9a1320-eb55-4a4b-bbf3-76e0afd147b8'
 settings:

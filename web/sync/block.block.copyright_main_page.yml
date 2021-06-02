@@ -12,7 +12,7 @@ dependencies:
 id: copyright_main_page
 theme: IOI_theme
 region: footer_third
-weight: -22
+weight: -21
 provider: null
 plugin: 'block_content:50f74e7d-336c-4e15-a4d9-6c4c914564ea'
 settings:
