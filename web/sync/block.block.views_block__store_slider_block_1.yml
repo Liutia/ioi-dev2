@@ -12,7 +12,7 @@ dependencies:
 id: views_block__store_slider_block_1
 theme: IOI_theme
 region: highlighted
-weight: 0
+weight: -17
 provider: null
 plugin: 'views_block:store_slider-block_1'
 settings:

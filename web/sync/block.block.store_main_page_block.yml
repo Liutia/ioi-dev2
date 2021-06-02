@@ -1,0 +1,30 @@
+uuid: f6aa4004-f769-40b6-8328-b52518ded781
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:store_main_menu:fb048db1-9147-4a97-8768-f2f9a4958861'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: store_main_page_block
+theme: IOI_theme
+region: highlighted
+weight: -22
+provider: null
+plugin: 'block_content:fb048db1-9147-4a97-8768-f2f9a4958861'
+settings:
+  id: 'block_content:fb048db1-9147-4a97-8768-f2f9a4958861'
+  label: store_main_page_block
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /store
+    negate: false

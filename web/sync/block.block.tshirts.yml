@@ -1,19 +1,22 @@
-uuid: 9125ee5c-164a-45c6-818f-7da4777c0712
+uuid: 8028784f-9fe6-4ca9-bc3c-c691853091c2
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:shop_tsk18:f4dff08d-9675-4a31-8ffe-43074fc9d756'
   module:
+    - block_content
     - system
   theme:
     - IOI_theme
 id: tshirts
 theme: IOI_theme
 region: featured_bottom_first
-weight: 0
+weight: -14
 provider: null
-plugin: 'block_content:efccdbca-7624-4d55-9c01-7bccc6f59e34'
+plugin: 'block_content:f4dff08d-9675-4a31-8ffe-43074fc9d756'
 settings:
-  id: 'block_content:efccdbca-7624-4d55-9c01-7bccc6f59e34'
+  id: 'block_content:f4dff08d-9675-4a31-8ffe-43074fc9d756'
   label: Tshirts
   provider: block_content
   label_display: '0'

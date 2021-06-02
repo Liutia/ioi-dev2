@@ -7,7 +7,7 @@ dependencies:
     - node.type.news
     - taxonomy.vocabulary.news_taxonomy
   content:
-    - 'taxonomy_term:news_taxonomy:5665bdf4-cb54-4b98-a567-cdcc85c3d8ce'
+    - 'taxonomy_term:news_taxonomy:b4596603-a805-439d-bf60-d1d69db87439'
   module:
     - node
     - taxonomy
@@ -146,7 +146,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            3: 3
+            1: 1
           group: 1
           exposed: false
           expose:

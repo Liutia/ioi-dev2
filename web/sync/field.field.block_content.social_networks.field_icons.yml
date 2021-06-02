@@ -11,7 +11,7 @@ id: block_content.social_networks.field_icons
 field_name: field_icons
 entity_type: block_content
 bundle: social_networks
-label: icons
+label: 'LIKE, FOLLOW AND SUBSCRIBE'
 description: ''
 required: false
 translatable: false
