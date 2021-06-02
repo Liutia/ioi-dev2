@@ -1,0 +1,30 @@
+uuid: 1104ac89-8f82-4308-882a-f8379836b6dc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:051f979d-f54f-4e13-923d-d005948461d3'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: headerlogoonscroll
+theme: IOI_theme
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:051f979d-f54f-4e13-923d-d005948461d3'
+settings:
+  id: 'block_content:051f979d-f54f-4e13-923d-d005948461d3'
+  label: header-logo-onscroll
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

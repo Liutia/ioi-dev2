@@ -54,11 +54,16 @@ display:
           items_per_page: 12
           offset: 0
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -119,7 +124,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: 280x200
-            image_link: ''
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -182,7 +187,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -274,7 +279,7 @@ display:
           expose:
             label: ''
           plugin_id: random
-      title: 'store main page products list block'
+      title: 'Featured collection'
       header: {  }
       footer: {  }
       empty: {  }
@@ -283,7 +288,7 @@ display:
       display_extenders: {  }
       use_more: true
       use_more_always: true
-      use_more_text: more
+      use_more_text: 'view all'
       link_url: /front
       link_display: custom_url
     cache_metadata:
