@@ -54,11 +54,16 @@ display:
           items_per_page: 12
           offset: 0
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -274,16 +279,16 @@ display:
           expose:
             label: ''
           plugin_id: random
-      title: 'store main page products list block'
+      title: 'Featured collection'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_more: false
-      use_more_always: false
-      use_more_text: more
+      use_more: true
+      use_more_always: true
+      use_more_text: 'view all'
       link_url: /front
       link_display: custom_url
     cache_metadata:
