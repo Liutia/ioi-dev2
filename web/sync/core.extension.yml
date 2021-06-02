@@ -17,6 +17,8 @@ module:
   commerce: 0
   commerce_cart: 0
   commerce_checkout: 0
+  commerce_currency_resolver: 0
+  commerce_exchanger: 0
   commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0

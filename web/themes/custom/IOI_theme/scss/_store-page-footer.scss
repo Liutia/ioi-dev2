@@ -6,75 +6,7 @@
   url('https://nomail.com.ua/files/woff/416895af68d7ac172c399b6b5fbb2878.woff') format('woff'),
   url('https://nomail.com.ua/files/woff2/416895af68d7ac172c399b6b5fbb2878.woff2') format('woff2');
 }
-
-.site-footer-2 {
-  font-family: 'MaisonNeue-Book';
-  padding: 0 40px;
-  background-color: $clr-white;
-  .container {
-    max-width: 1200px;
-
-    .region-footer-first {
-      display: flex;
-      padding-bottom: 70px;
-      border-bottom: 1px solid $clr-news-br-gray;
-      .menu--footer-quick-links {
-        max-width: 400px;
-        h2 {
-          font-size: 17px;
-          font-family: 'MaisonNeue-Book';
-          font-weight: bold;
-          padding-bottom: 10px;
-        }
-        ul {
-          margin-left: -16px;
-          a {
-            color: $black;
-            font-size: 16px;
-            &:hover {
-              color: #4b4b4b;
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-      .block-block-content {
-        h2 {
-          font-size: 17px;
-          font-family: 'MaisonNeue-Book';
-          font-weight: bold;
-          padding-bottom: 10px;
-        }
-        .content {
-          line-height: 40px;
-        }
-      }
-    }
-    .region-footer-third {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 0;
-      .field--name-field-payment {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .field--type-text-with-summary {
-        font-size: 14px;
-        font-family: 'MaisonNeue-Book';
-        a {
-          color: $black;
-          &:hover {
-            color: #4b4b4b;
-            text-decoration: underline;
-          }
-        }
-
-      }
-    }
-  }
-}
-
-@media (max-width: 860px) {
+.path-store {
   .site-footer-2 {
     font-family: 'MaisonNeue-Book';
     padding: 0 40px;
@@ -83,18 +15,11 @@
       max-width: 1200px;
 
       .region-footer-first {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
         padding-bottom: 70px;
         border-bottom: 1px solid $clr-news-br-gray;
         .menu--footer-quick-links {
-          width: max-content;
-          display: flex;
-          flex-direction: column;
-          margin: 0 auto;
-          padding-bottom: 50px;
-          padding-left: 29px;
-
+          max-width: 400px;
           h2 {
             font-size: 17px;
             font-family: 'MaisonNeue-Book';
@@ -127,9 +52,8 @@
       }
       .region-footer-third {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         padding: 30px 0;
-
         .field--name-field-payment {
           display: flex;
           flex-wrap: wrap;
@@ -149,78 +73,162 @@
       }
     }
   }
+}
+
+
+@media (max-width: 860px) {
+  .path-store {
+    .site-footer-2 {
+      font-family: 'MaisonNeue-Book';
+      padding: 0 40px;
+      background-color: $clr-white;
+      .container {
+        max-width: 1200px;
+
+        .region-footer-first {
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-bottom: 70px;
+          border-bottom: 1px solid $clr-news-br-gray;
+          .menu--footer-quick-links {
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            padding-left: 29px;
+
+            h2 {
+              font-size: 17px;
+              font-family: 'MaisonNeue-Book';
+              font-weight: bold;
+              padding-bottom: 10px;
+            }
+            ul {
+              margin-left: -16px;
+              a {
+                color: $black;
+                font-size: 16px;
+                &:hover {
+                  color: #4b4b4b;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .block-block-content {
+            h2 {
+              font-size: 17px;
+              font-family: 'MaisonNeue-Book';
+              font-weight: bold;
+              padding-bottom: 10px;
+            }
+            .content {
+              line-height: 40px;
+            }
+          }
+        }
+        .region-footer-third {
+          display: flex;
+          justify-content: center;
+          padding: 30px 0;
+
+          .field--name-field-payment {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .field--type-text-with-summary {
+            font-size: 14px;
+            font-family: 'MaisonNeue-Book';
+            a {
+              color: $black;
+              &:hover {
+                color: #4b4b4b;
+                text-decoration: underline;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 480px) {
-  .site-footer-2 {
-    font-family: 'MaisonNeue-Book';
-    padding: 0 40px;
-    background-color: $clr-white;
-    .container {
-      max-width: 1200px;
+  .path-store {
+    .site-footer-2 {
+      font-family: 'MaisonNeue-Book';
+      padding: 0 40px;
+      background-color: $clr-white;
+      .container {
+        max-width: 1200px;
 
-      .region-footer-first {
-        display: flex;
-        padding-bottom: 70px;
-        border-bottom: 1px solid $clr-news-br-gray;
-        .menu--footer-quick-links {
+        .region-footer-first {
           display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          margin: 0 auto;
-          padding-bottom: 50px;
-          h2 {
-            font-size: 17px;
-            font-family: 'MaisonNeue-Book';
-            font-weight: bold;
-            padding-bottom: 10px;
+          padding-bottom: 70px;
+          border-bottom: 1px solid $clr-news-br-gray;
+          .menu--footer-quick-links {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            h2 {
+              font-size: 17px;
+              font-family: 'MaisonNeue-Book';
+              font-weight: bold;
+              padding-bottom: 10px;
+            }
+            ul {
+              margin-left: -16px;
+              a {
+                color: $black;
+                font-size: 16px;
+                &:hover {
+                  color: #4b4b4b;
+                  text-decoration: underline;
+                }
+              }
+            }
           }
-          ul {
-            margin-left: -16px;
+          .block-block-content {
+            padding-left: 29px;
+            h2 {
+              font-size: 17px;
+              font-family: 'MaisonNeue-Book';
+              font-weight: bold;
+              padding-bottom: 10px;
+            }
+            .content {
+              line-height: 40px;
+            }
+          }
+        }
+        .region-footer-third {
+          display: flex;
+          justify-content: center;
+          padding: 30px 0;
+          .field--name-field-payment {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .field--type-text-with-summary {
+            font-size: 14px;
+            font-family: 'MaisonNeue-Book';
             a {
               color: $black;
-              font-size: 16px;
               &:hover {
                 color: #4b4b4b;
                 text-decoration: underline;
               }
             }
-          }
-        }
-        .block-block-content {
-          padding-left: 29px;
-          h2 {
-            font-size: 17px;
-            font-family: 'MaisonNeue-Book';
-            font-weight: bold;
-            padding-bottom: 10px;
-          }
-          .content {
-            line-height: 40px;
-          }
-        }
-      }
-      .region-footer-third {
-        display: flex;
-        justify-content: center;
-        padding: 30px 0;
-        .field--name-field-payment {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .field--type-text-with-summary {
-          font-size: 14px;
-          font-family: 'MaisonNeue-Book';
-          a {
-            color: $black;
-            &:hover {
-              color: #4b4b4b;
-              text-decoration: underline;
-            }
-          }
 
+          }
         }
       }
     }
   }
+
 }
