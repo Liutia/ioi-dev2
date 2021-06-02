@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.clothing_order_variation_type
+    - field.field.commerce_product_variation.clothing_order_variation_type.attribute_size
   module:
     - commerce_price
     - layout_builder
@@ -38,25 +39,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 10
-          c3ea8a38-4fcd-4ff2-8772-193f72cfc7e0:
-            uuid: c3ea8a38-4fcd-4ff2-8772-193f72cfc7e0
-            region: content
-            configuration:
-              id: 'field_block:commerce_product_variation:clothing_order_variation_type:product_id'
-              label: Product
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 6
           e6a1897d-4a79-45ef-9a97-5257b266e6bf:
             uuid: e6a1897d-4a79-45ef-9a97-5257b266e6bf
             region: content
@@ -96,6 +78,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  attribute_size: true
   list_price: true
   sku: true
   title: true

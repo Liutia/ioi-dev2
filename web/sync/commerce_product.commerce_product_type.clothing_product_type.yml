@@ -6,7 +6,7 @@ id: clothing_product_type
 label: 'Clothing product type'
 description: ''
 variationType: clothing_order_variation_type
-multipleVariations: false
+multipleVariations: true
 injectVariationFields: true
 traits: {  }
 locked: false

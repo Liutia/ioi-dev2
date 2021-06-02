@@ -1,0 +1,29 @@
+uuid: 0a837d27-45e2-4792-a4cb-209b10b3f2a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.like_follow_and_subscribe
+  module:
+    - system
+    - views
+  theme:
+    - IOI_theme
+id: views_block__like_follow_and_subscribe_block_1
+theme: IOI_theme
+region: footer_subscribe
+weight: 0
+provider: null
+plugin: 'views_block:like_follow_and_subscribe-block_1'
+settings:
+  id: 'views_block:like_follow_and_subscribe-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: true

@@ -1,0 +1,30 @@
+uuid: 5e7ac88c-32cf-44f1-95f9-5bd17ff7b3a7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_networks:c98f4758-22f1-44fd-9338-bd26a7a1b3c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: newcareeropportunities_2
+theme: IOI_theme
+region: footer_subscribe
+weight: -21
+provider: null
+plugin: 'block_content:c98f4758-22f1-44fd-9338-bd26a7a1b3c6'
+settings:
+  id: 'block_content:c98f4758-22f1-44fd-9338-bd26a7a1b3c6'
+  label: 'NEW CAREER OPPORTUNITIES'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: true

@@ -1,7 +1,12 @@
-uuid: e302e367-513b-4b6a-90f7-8a3baad41e47
+uuid: 72672933-b563-4151-9360-936ed63c4ea8
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:block_for_main_news_and_main_hit:cbc7b73e-41c9-4348-9b53-136c89526f39'
+  module:
+    - block_content
+    - system
   theme:
     - IOI_theme
 id: jointheteam
@@ -9,13 +14,17 @@ theme: IOI_theme
 region: featured_bottom_second
 weight: 0
 provider: null
-plugin: 'block_content:beb3f6eb-eab7-43bf-97bf-021a04dd72e4'
+plugin: 'block_content:cbc7b73e-41c9-4348-9b53-136c89526f39'
 settings:
-  id: 'block_content:beb3f6eb-eab7-43bf-97bf-021a04dd72e4'
+  id: 'block_content:cbc7b73e-41c9-4348-9b53-136c89526f39'
   label: 'Join the team!'
   provider: block_content
   label_display: visible
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

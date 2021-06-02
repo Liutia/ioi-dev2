@@ -21,7 +21,7 @@ bundle: store_main_menu
 mode: default
 content:
   field_store_main_menu_cart:
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       layers: false
@@ -29,18 +29,6 @@ content:
     type: fontawesome_icon_formatter
     region: content
   field_store_main_menu_link:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_store_main_menu_title:
     weight: 1
     label: hidden
     settings:
@@ -52,4 +40,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_store_main_menu_title:
+    type: link
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
 hidden: {  }

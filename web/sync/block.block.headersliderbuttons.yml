@@ -2,23 +2,20 @@ uuid: c21f17dd-3d52-4343-8a35-fbabb1f280a9
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:header_slider_buttons:e67396dc-9ebe-4178-989e-7e3b84934a10'
   module:
-    - block_content
     - system
   theme:
     - IOI_theme
 id: headersliderbuttons
 theme: IOI_theme
 region: highlighted
-weight: -5
+weight: -19
 provider: null
 plugin: 'block_content:e67396dc-9ebe-4178-989e-7e3b84934a10'
 settings:
   id: 'block_content:e67396dc-9ebe-4178-989e-7e3b84934a10'
   label: header-slider-buttons
-  provider: block_content
+  provider: core
   label_display: '0'
   status: true
   info: ''

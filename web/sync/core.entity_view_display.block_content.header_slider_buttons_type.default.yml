@@ -1,15 +1,15 @@
-uuid: e56e23ab-ccec-4d2e-b241-d3f81dbf7c16
+uuid: 1700d011-64be-4152-8991-e28d0625d460
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.header_slider_buttons
-    - field.field.block_content.header_slider_buttons.body
+    - block_content.type.header_slider_buttons_type
+    - field.field.block_content.header_slider_buttons_type.body
   module:
     - text
-id: block_content.header_slider_buttons.default
+id: block_content.header_slider_buttons_type.default
 targetEntityType: block_content
-bundle: header_slider_buttons
+bundle: header_slider_buttons_type
 mode: default
 content:
   body:

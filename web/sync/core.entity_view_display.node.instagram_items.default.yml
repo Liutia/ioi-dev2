@@ -3,11 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.instagram_items.field_image_instagram
     - field.field.node.instagram_items.field_img1
     - image.style.100x100
     - node.type.instagram_items
   module:
+    - image
     - layout_builder
+    - layout_discovery
     - media
     - user
 third_party_settings:
@@ -37,12 +40,38 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 0
+          f43a08b3-f1c9-43af-acc5-b6815ab15008:
+            uuid: f43a08b3-f1c9-43af-acc5-b6815ab15008
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:instagram_items:field_image_instagram'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 id: node.instagram_items.default
 targetEntityType: node
 bundle: instagram_items
 mode: default
 content:
+  field_image_instagram:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_img1:
     type: media_thumbnail
     weight: 0

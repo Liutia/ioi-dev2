@@ -1,0 +1,24 @@
+uuid: d623c01c-0066-441a-98d3-6bb7c1a549b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_logo
+    - field.field.block_content.footer_logo.field_footer_logo
+  module:
+    - image
+id: block_content.footer_logo.default
+targetEntityType: block_content
+bundle: footer_logo
+mode: default
+content:
+  field_footer_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }
