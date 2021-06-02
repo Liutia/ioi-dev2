@@ -26,7 +26,8 @@
     }
   }
   .main-center-footer {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 20px;
     .region-footer-contact {
@@ -34,6 +35,9 @@
       max-width: 100%;
       .block-block-content {
         .layout--twocol-section {
+          .layout__region--first {
+            padding-right: 25px;
+          }
           font-size: 12px;
           font-family: 'Maison Neue', Sans-Serif;
           line-height: 1.8;
@@ -202,12 +206,18 @@
   .main-center-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
     padding: 0 20px;
     .region-footer-contact {
-      display: block;
+      display: flex;
       max-width: 100%;
+      margin: 0 auto;
+
       .block-block-content {
         .layout--twocol-section {
+          .layout__region--first {
+            padding-right: 25px;
+          }
           font-size: 12px;
           font-family: 'Maison Neue', Sans-Serif;
           line-height: 1.8;
@@ -311,8 +321,10 @@
     }
   }
   .region-footer-instagram {
-    display: flex;
+    //display: block;
     margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
     .block-views-blocksocial-icon-front-page-block-1 {
       margin-top: 20px;
 
@@ -378,8 +390,8 @@
     }
   }
   .main-center-footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
     .region-footer-contact {
       display: flex;
@@ -389,6 +401,9 @@
 
       .block-block-content {
         .layout--twocol-section {
+          .layout__region--first {
+            padding-right: 25px;
+          }
           font-size: 12px;
           font-family: 'Maison Neue', Sans-Serif;
           line-height: 1.8;
