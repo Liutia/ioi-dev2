@@ -34,13 +34,13 @@
               justify-content: center;
               align-items: center;
               transition: 0.5s;
-              &:hover{
-                background: $clr-btn-red-hover;
-                border-radius: 3px;
-              }
               a{
                 font-size: 12px !important;
                 color: $clr-white;
+                transition: 0.5s;
+                &:hover{
+                  color: $clr-white-hover;
+                }
               }
             }
             li:nth-child(6){
@@ -61,6 +61,17 @@
             background: $clr-btn-red-hover;
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 730px) {
+  .path-frontpage {
+    #page-wrapper {
+      #navbar-main {
+        position: static;
+        background: $clr-btn-red !important;
+        border-bottom: none;
       }
     }
   }
