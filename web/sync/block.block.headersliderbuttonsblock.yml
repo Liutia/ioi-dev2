@@ -12,7 +12,7 @@ dependencies:
 id: headersliderbuttonsblock
 theme: IOI_theme
 region: highlighted
-weight: -18
+weight: -15
 provider: null
 plugin: 'block_content:43bbbb06-cd1d-4524-ae18-f5910f738045'
 settings:
