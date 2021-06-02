@@ -1,0 +1,96 @@
+@import "variables";
+
+#block-views-block-store-main-page-products-list-block-block-1{
+  max-width: 1060px;
+  margin: 0 auto;
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 17.5px;
+  }
+  .content{
+    .view-content{
+      .views-row{
+        display: flex;
+        justify-content: space-between;
+        .views-col{
+          max-width: 25%;
+          min-width: 25%;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 55px;
+          &:hover img{
+            opacity: 0.5;
+          }
+          &:hover a{
+            text-decoration: underline;
+          }
+          .views-field-field-product-image{
+            text-align: center;
+          }
+          .views-field-title{
+            .field-content{
+              a{
+                padding-right: 20px;
+                color: $clr-black;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+    .more-link{
+      text-align: center;
+      margin-top: 10px;
+      a{
+        color: $clr-white;
+        background: $clr-btn-red;
+        padding: 10px 18px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        &:hover{
+          background: $clr-btn-red-hover;
+          text-decoration: none;
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #block-views-block-store-main-page-products-list-block-block-1{
+    .content{
+      .view-content{
+        .views-row{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin: 0 auto 40px;
+          &:nth-child(3){
+            display: none;
+          }
+          .views-col{
+            margin: 0 auto;
+            max-width: 70%;
+            min-width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  #block-views-block-store-main-page-products-list-block-block-1{
+    .content{
+      .view-content{
+        .views-row{
+          grid-template-columns: 1fr;
+          &:nth-child(2){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
