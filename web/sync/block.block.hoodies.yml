@@ -1,19 +1,22 @@
-uuid: 8a36433d-b1ba-402b-b7c1-0e5c33097147
+uuid: de91fbf2-06b0-41aa-a73a-337ea1f1583e
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:shop_tsk18:7a50f5a9-3f17-4d5f-bbc0-e79d022a6212'
   module:
+    - block_content
     - system
   theme:
     - IOI_theme
 id: hoodies
 theme: IOI_theme
 region: featured_bottom_first
-weight: 0
+weight: -12
 provider: null
-plugin: 'block_content:98faa87c-c33c-4748-bac9-281b8fdcac30'
+plugin: 'block_content:7a50f5a9-3f17-4d5f-bbc0-e79d022a6212'
 settings:
-  id: 'block_content:98faa87c-c33c-4748-bac9-281b8fdcac30'
+  id: 'block_content:7a50f5a9-3f17-4d5f-bbc0-e79d022a6212'
   label: Hoodies
   provider: block_content
   label_display: '0'

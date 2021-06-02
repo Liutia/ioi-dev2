@@ -119,7 +119,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: 280x200
-            image_link: ''
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -182,7 +182,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -281,8 +281,8 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      use_more: true
-      use_more_always: true
+      use_more: false
+      use_more_always: false
       use_more_text: more
       link_url: /front
       link_display: custom_url

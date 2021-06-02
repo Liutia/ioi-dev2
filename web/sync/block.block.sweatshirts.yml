@@ -1,19 +1,22 @@
-uuid: 6ebbaa0f-3488-4c27-ad20-6c4b121d058b
+uuid: cb900164-9903-4d9d-b9f5-36d418b2a89c
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:shop_tsk18:72d9911e-92d0-4f86-814e-a8cbe157f376'
   module:
+    - block_content
     - system
   theme:
     - IOI_theme
 id: sweatshirts
 theme: IOI_theme
 region: featured_bottom_first
-weight: 0
+weight: -13
 provider: null
-plugin: 'block_content:6104948c-9cdb-4759-8b61-f1a176b5a81e'
+plugin: 'block_content:72d9911e-92d0-4f86-814e-a8cbe157f376'
 settings:
-  id: 'block_content:6104948c-9cdb-4759-8b61-f1a176b5a81e'
+  id: 'block_content:72d9911e-92d0-4f86-814e-a8cbe157f376'
   label: Sweatshirts
   provider: block_content
   label_display: '0'

@@ -1,0 +1,30 @@
+uuid: f5edb767-5c5c-4507-8d60-d84bb6ad50ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_logo:dff4992e-dad4-4242-a1fc-34318206c35b'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: footerlogo
+theme: IOI_theme
+region: footer_first
+weight: -18
+provider: null
+plugin: 'block_content:dff4992e-dad4-4242-a1fc-34318206c35b'
+settings:
+  id: 'block_content:dff4992e-dad4-4242-a1fc-34318206c35b'
+  label: 'footer logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: true

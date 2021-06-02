@@ -33,6 +33,7 @@ regions:
   footer_subscribe: 'footer_subscribe'
   footer_instagram: 'footer_instagram'
   footer_third: 'Footer third (copiright)'
+  footer_excheng: 'footer_excheng'
 
 # Information added by Drupal.org packaging script on 2020-10-11
 version: '5.0.2'

@@ -1,0 +1,30 @@
+uuid: 8af90785-cd2a-4735-9b29-5951bc24fc9e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:payment_block:9c9a1320-eb55-4a4b-bbf3-76e0afd147b8'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: payment_2
+theme: IOI_theme
+region: footer_third
+weight: -23
+provider: null
+plugin: 'block_content:9c9a1320-eb55-4a4b-bbf3-76e0afd147b8'
+settings:
+  id: 'block_content:9c9a1320-eb55-4a4b-bbf3-76e0afd147b8'
+  label: payment
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/store\r\n/store/*"
+    negate: false

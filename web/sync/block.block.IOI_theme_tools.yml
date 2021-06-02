@@ -13,7 +13,7 @@ _core:
 id: IOI_theme_tools
 theme: IOI_theme
 region: header
-weight: -6
+weight: -14
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
