@@ -4,24 +4,23 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.instagram_items.field_img1
-    - image.style.thumbnail
+    - field.field.node.instagram_items.field_image_instagram
     - node.type.instagram_items
   module:
-    - media
+    - image
     - user
 id: node.instagram_items.teaser
 targetEntityType: node
 bundle: instagram_items
 mode: teaser
 content:
-  field_img1:
-    type: media_thumbnail
+  field_image_instagram:
+    type: image
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
 hidden:

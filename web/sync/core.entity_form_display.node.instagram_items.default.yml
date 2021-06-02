@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.instagram_items.field_img1
+    - field.field.node.instagram_items.field_image_instagram
+    - image.style.thumbnail
     - node.type.instagram_items
   module:
-    - media_library
+    - image
     - path
 id: node.instagram_items.default
 targetEntityType: node
@@ -19,12 +20,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_img1:
-    type: media_library_widget
-    weight: 121
+  field_image_instagram:
+    weight: 122
     settings:
-      media_types: {  }
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
     region: content
   path:
     type: path

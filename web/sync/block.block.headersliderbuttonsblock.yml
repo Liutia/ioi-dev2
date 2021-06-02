@@ -1,0 +1,30 @@
+uuid: b71dbff2-eff8-4ffd-a5ad-0d8035837e4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_slider_buttons_type:43bbbb06-cd1d-4524-ae18-f5910f738045'
+  module:
+    - block_content
+    - system
+  theme:
+    - IOI_theme
+id: headersliderbuttonsblock
+theme: IOI_theme
+region: highlighted
+weight: -15
+provider: null
+plugin: 'block_content:43bbbb06-cd1d-4524-ae18-f5910f738045'
+settings:
+  id: 'block_content:43bbbb06-cd1d-4524-ae18-f5910f738045'
+  label: header-slider-buttons-block
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

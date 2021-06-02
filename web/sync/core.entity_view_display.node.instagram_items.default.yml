@@ -3,54 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.instagram_items.field_img1
-    - image.style.100x100
+    - field.field.node.instagram_items.field_image_instagram
     - node.type.instagram_items
   module:
+    - image
     - layout_builder
-    - media
     - user
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          bfdfccfa-7957-4915-b468-8a385d33af0b:
-            uuid: bfdfccfa-7957-4915-b468-8a385d33af0b
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:instagram_items:field_img1'
-              formatter:
-                type: media_thumbnail
-                label: above
-                settings:
-                  image_style: 100x100
-                  image_link: content
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
+    enabled: false
 id: node.instagram_items.default
 targetEntityType: node
 bundle: instagram_items
 mode: default
 content:
-  field_img1:
-    type: media_thumbnail
-    weight: 0
-    label: above
+  field_image_instagram:
+    weight: 1
+    label: hidden
     settings:
-      image_style: 100x100
-      image_link: content
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
+    type: image
     region: content
 hidden:
   links: true

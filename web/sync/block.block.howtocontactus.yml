@@ -1,17 +1,14 @@
 uuid: 0a54c3e8-b70b-4abf-975b-7ee8a8015e31
 langcode: en
-status: true
+status: false
 dependencies:
-  content:
-    - 'block_content:how_to_contact_us:cbadf55e-7473-4e74-b815-bdceb5ce7a46'
   module:
-    - block_content
     - system
   theme:
     - IOI_theme
 id: howtocontactus
 theme: IOI_theme
-region: footer_second
+region: header
 weight: -15
 provider: null
 plugin: 'block_content:cbadf55e-7473-4e74-b815-bdceb5ce7a46'
