@@ -776,11 +776,11 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 $databases['default']['default'] = array (
-  'database' => 'default',
-  'username' => 'user',
-  'password' => 'user',
+  'database' => 'c0dtoxit',
+  'username' => 'c0dtoxit',
+  'password' => 'j6iFUK!Xbu',
   'prefix' => '',
-  'host' => 'db',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
