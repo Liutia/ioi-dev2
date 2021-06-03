@@ -18,6 +18,7 @@
             background: 'white',
             borderBottom: 'none',
           });
+          $("#block-headerlogo").css("display", "none");
           $("#block-headerlogoonscroll").css("display", "block");
           $('.nav-link').css("color", "black");
         } else {
