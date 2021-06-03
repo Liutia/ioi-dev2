@@ -8,8 +8,8 @@
     color: $white;
     background: url("../../../../Img/main1.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 860px;
+    background-position: center center;
+    background-size: cover;
     .region-featured-bottom-second{
       margin: auto auto 150px 100px;
       .content {
@@ -44,7 +44,6 @@
   .page-view-frontpage {
     .section-team{
       height: 660px;
-      background-size: 100% 660px;
     }
   }
 }
@@ -52,7 +51,6 @@
   .page-view-frontpage {
     .section-team{
       height: 460px;
-      background-size: 100% 460px;
       .region-featured-bottom-second {
         margin: auto;
         padding: 20px;
@@ -70,7 +68,21 @@
   .page-view-frontpage{
     .section-team {
       height: 300px;
-      background-size: 100% 300px;
+    }
+  }
+}
+@media (max-width: 470px) {
+  .page-view-frontpage{
+    .section-team {
+      height: min-content;
+      .region-featured-bottom-second{
+        margin: 10px auto;
+        .content{
+          p {
+            font-size: 10px;
+          }
+        }
+      }
     }
   }
 }

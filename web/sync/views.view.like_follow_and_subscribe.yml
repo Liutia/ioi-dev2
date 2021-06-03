@@ -176,7 +176,7 @@ display:
             order: first
             size: 1x
             width: fixed
-            coloured: uncoloured
+            coloured: coloured
             shaped: natural
             background: none
           group_column: ''

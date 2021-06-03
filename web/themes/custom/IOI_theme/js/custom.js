@@ -8,8 +8,7 @@
   'use strict';
 
   Drupal.behaviors.IOI_theme = {
-    attach: function(context, settings) {
-
+    attach: function() {
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
@@ -19,7 +18,6 @@
             background: 'white',
             borderBottom: 'none',
           });
-          $("#block-headerlogo").css("display", "none");
           $("#block-headerlogoonscroll").css("display", "block");
           $('.nav-link').css("color", "black");
         } else {
@@ -31,11 +29,9 @@
           $("#block-headerlogoonscroll").css("display", "none");
           $("#block-headerlogo").css("display", "block");
           $('.nav-link').css("color", "white");
-
         }
       }
     }
   };
 
 })(jQuery, Drupal);
-

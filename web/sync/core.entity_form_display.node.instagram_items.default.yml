@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.instagram_items.field_image_instagram
+    - field.field.node.instagram_items.field_img1
     - image.style.thumbnail
     - node.type.instagram_items
   module:
     - image
+    - media_library
     - path
 id: node.instagram_items.default
 targetEntityType: node
@@ -27,6 +29,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_img1:
+    type: media_library_widget
+    weight: 121
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   path:
     type: path
