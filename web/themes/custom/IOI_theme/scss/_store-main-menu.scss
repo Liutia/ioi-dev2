@@ -2,7 +2,7 @@
   header{
     display: none;
   }
-  .views-element-container.block.block-views.block-views-blockstore-slider-block-1{
+  #block-views-block-store-slider-block-1{
     margin-top: 80px;
   }
   #block-store-main-page-block{
@@ -84,7 +84,7 @@
 }
 @media (max-width: 1120px) {
   .path-store{
-    .views-element-container.block.block-views.block-views-blockstore-slider-block-1{
+    #block-views-block-store-slider-block-1{
       margin-top: 50px;
     }
     #block-store-main-page-block{
