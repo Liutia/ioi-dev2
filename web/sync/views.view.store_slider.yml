@@ -90,9 +90,9 @@ display:
             wait_for_image_load_timeout: '1'
             cleartype: 0
             cleartypenobg: 0
-            advanced_options_choices: '0'
+            advanced_options_choices: after
             advanced_options_entry: ''
-            advanced_options: '{"width":"","slideResize":"","cleartype":"","onPagerEvent":"","pagerEvent":"","continuous":"","slideExpr":"","updateActivePagerLink":"","requeueOnImageNotLoaded":""}'
+            advanced_options: '{"width":"","slideResize":"","cleartype":"","onPagerEvent":"","pagerEvent":"","continuous":"","slideExpr":"","updateActivePagerLink":"","requeueOnImageNotLoaded":"","after":""}'
           widgets:
             top:
               views_slideshow_controls:
@@ -354,10 +354,6 @@ display:
           id: created
           table: node_field_data
           field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
