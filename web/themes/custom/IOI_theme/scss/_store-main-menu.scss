@@ -4,11 +4,12 @@
   }
   #block-store-main-page-block{
     margin-left: -15px;
+    margin-top: -80px;
+    background: $white;
     z-index: 10000;
     width: 100%;
     height: min-content;
     position: fixed;
-    background: white;
     .content{
       display: flex;
       justify-content: space-between;
@@ -82,7 +83,7 @@
   .path-store{
     #block-store-main-page-block{
       padding: 0px 5px;
-      margin: 0 0 0 -15px;
+      margin-left: -15px;
       .content{
         padding: 5px 15px 5px 0;
         .field.field--name-field-store-main-menu-title.field--type-link.field--label-hidden.field__item{
