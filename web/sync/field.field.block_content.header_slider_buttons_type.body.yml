@@ -1,16 +1,16 @@
-uuid: 49f18f3c-42a6-4737-afd3-af217a69c58f
+uuid: 9b9fd9a9-9c1b-44ca-9f4a-ade677eacd6b
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.header_slider_buttons
+    - block_content.type.header_slider_buttons_type
     - field.storage.block_content.body
   module:
     - text
-id: block_content.header_slider_buttons.body
+id: block_content.header_slider_buttons_type.body
 field_name: body
 entity_type: block_content
-bundle: header_slider_buttons
+bundle: header_slider_buttons_type
 label: Body
 description: ''
 required: false

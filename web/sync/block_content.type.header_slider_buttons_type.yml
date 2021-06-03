@@ -1,8 +1,8 @@
-uuid: b675d510-87cd-44ed-8abf-3be7fa4e37c7
+uuid: fbd37e5c-718d-49fa-bee7-0fe1f95a342f
 langcode: en
 status: true
 dependencies: {  }
-id: header_slider_buttons
+id: header_slider_buttons_type
 label: header-slider-buttons-type
 revision: 0
 description: ''

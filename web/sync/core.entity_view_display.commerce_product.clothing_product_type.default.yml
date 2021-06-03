@@ -11,6 +11,7 @@ dependencies:
     - image.style.280x200
   module:
     - commerce_price
+    - commerce_product
     - layout_builder
     - media
 third_party_settings:
@@ -38,7 +39,7 @@ content:
     label: hidden
     settings:
       image_style: 280x200
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
   title:
     type: string
@@ -46,7 +47,15 @@ content:
     region: content
     label: hidden
     settings:
-      link_to_entity: false
+      link_to_entity: true
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      combine: true
     third_party_settings: {  }
 hidden:
   body: true
@@ -54,4 +63,3 @@ hidden:
   field_clothing_catego: true
   stores: true
   uid: true
-  variations: true

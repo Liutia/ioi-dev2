@@ -96,7 +96,7 @@ third_party_settings:
               label_display: visible
               formatter:
                 label: hidden
-                type: basic_string
+                type: email_mailto
                 settings: {  }
                 third_party_settings: {  }
               context_mapping:
