@@ -57,6 +57,9 @@
         .field--name-field-payment {
           display: flex;
           flex-wrap: wrap;
+          .field__item {
+            margin-right: 5px;
+          }
         }
         .field--type-text-with-summary {
           font-size: 14px;
