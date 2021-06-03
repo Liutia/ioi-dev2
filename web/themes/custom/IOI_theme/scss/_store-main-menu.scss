@@ -2,8 +2,12 @@
   header{
     display: none;
   }
+  .views-element-container.block.block-views.block-views-blockstore-slider-block-1{
+    margin-top: 80px;
+  }
   #block-store-main-page-block{
     margin-left: -15px;
+    margin-top: -80px;
     z-index: 10000;
     width: 100%;
     height: min-content;
@@ -80,8 +84,12 @@
 }
 @media (max-width: 1120px) {
   .path-store{
+    .views-element-container.block.block-views.block-views-blockstore-slider-block-1{
+      margin-top: 50px;
+    }
     #block-store-main-page-block{
       padding: 0px 5px;
+      margin-top: -50px;
       margin-left: -15px;
       .content{
         padding: 5px 15px 5px 0;
