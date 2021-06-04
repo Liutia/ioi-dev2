@@ -16,4 +16,5 @@ permissions:
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view empty pages'
   - 'view media'
