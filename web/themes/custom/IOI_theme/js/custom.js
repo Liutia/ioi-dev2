@@ -8,8 +8,7 @@
   'use strict';
 
   Drupal.behaviors.IOI_theme = {
-    attach: function(context, settings) {
-
+    attach: function() {
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
@@ -31,11 +30,9 @@
           $("#block-headerlogoonscroll").css("display", "none");
           $("#block-headerlogo").css("display", "block");
           $('.nav-link').css("color", "white");
-
         }
       }
     }
   };
 
 })(jQuery, Drupal);
-
