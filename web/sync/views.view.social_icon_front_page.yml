@@ -7,6 +7,7 @@ dependencies:
     - image.style.100x100
     - node.type.instagram_items
   module:
+    - blazy
     - image
     - node
     - user
@@ -55,15 +56,16 @@ display:
           items_per_page: 6
           offset: 0
       style:
-        type: default
+        type: blazy
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
+          style: column
+          grid: 3
+          grid_medium: null
+          grid_small: null
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
@@ -180,6 +182,22 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_image_instagram'
+  attachment_1:
+    display_plugin: attachment
+    id: attachment_1
+    display_title: Attachment
+    position: 2
+    display_options:
       display_extenders: {  }
     cache_metadata:
       max-age: -1

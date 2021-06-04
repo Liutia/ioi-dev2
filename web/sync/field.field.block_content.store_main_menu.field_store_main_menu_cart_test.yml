@@ -1,0 +1,21 @@
+uuid: 9fb92325-70d1-4a84-9120-50f1f790432f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.store_main_menu
+    - field.storage.block_content.field_store_main_menu_cart_test
+  module:
+    - text
+id: block_content.store_main_menu.field_store_main_menu_cart_test
+field_name: field_store_main_menu_cart_test
+entity_type: block_content
+bundle: store_main_menu
+label: store_main_menu_cart_test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
