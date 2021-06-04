@@ -5,14 +5,12 @@ dependencies:
   config:
     - block_content.type.store_main_menu
     - field.field.block_content.store_main_menu.field_store_main_menu_cart
-    - field.field.block_content.store_main_menu.field_store_main_menu_cart_test
     - field.field.block_content.store_main_menu.field_store_main_menu_link
     - field.field.block_content.store_main_menu.field_store_main_menu_title
   module:
     - fontawesome
     - layout_builder
     - link
-    - text
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -29,13 +27,6 @@ content:
       layers: false
     third_party_settings: {  }
     type: fontawesome_icon_formatter
-    region: content
-  field_store_main_menu_cart_test:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_store_main_menu_link:
     weight: 1

@@ -5,13 +5,11 @@ dependencies:
   config:
     - block_content.type.store_main_menu
     - field.field.block_content.store_main_menu.field_store_main_menu_cart
-    - field.field.block_content.store_main_menu.field_store_main_menu_cart_test
     - field.field.block_content.store_main_menu.field_store_main_menu_link
     - field.field.block_content.store_main_menu.field_store_main_menu_title
   module:
     - fontawesome
     - link
-    - text
 id: block_content.store_main_menu.default
 targetEntityType: block_content
 bundle: store_main_menu
@@ -22,14 +20,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: fontawesome_icon_widget
-    region: content
-  field_store_main_menu_cart_test:
-    weight: 27
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
     region: content
   field_store_main_menu_link:
     weight: 2
