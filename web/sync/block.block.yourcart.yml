@@ -1,0 +1,29 @@
+uuid: 8891d537-1b96-48f0-838b-ba8f6c8408ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.your-cart
+  module:
+    - system
+  theme:
+    - IOI_theme
+id: yourcart
+theme: IOI_theme
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:your-cart'
+settings:
+  id: 'system_menu_block:your-cart'
+  label: 'Your cart'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /cart
+    negate: false

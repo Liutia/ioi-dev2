@@ -100,46 +100,46 @@ display:
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_pager:
                 enable: false
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_fields
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0
                     field_slider_store_image: 0
                     field_slider_store_link: 0
                   views_slideshow_pager_fields_hover: 0
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
             bottom:
               views_slideshow_controls:
                 enable: true
                 weight: '2'
                 hide_on_single_slide: '0'
                 type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
               views_slideshow_pager:
                 enable: true
                 weight: '1'
                 hide_on_single_slide: '0'
                 type: views_slideshow_pager_bullets
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
                 views_slideshow_pager_fields:
                   views_slideshow_pager_fields_fields:
                     title: 0
                     field_slider_store_image: 0
                     field_slider_store_link: 0
                   views_slideshow_pager_fields_hover: 0
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
       row:
         type: 'entity:node'
         options:
