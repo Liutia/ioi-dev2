@@ -1,0 +1,10 @@
+uuid: cf9846c5-51ab-4541-93c7-b09f2fedd316
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.product_cart_img
+label: 'Product cart img'
+targetEntityType: commerce_product
+cache: true

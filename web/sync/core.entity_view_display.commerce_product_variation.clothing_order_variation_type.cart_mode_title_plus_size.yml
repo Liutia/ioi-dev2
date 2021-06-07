@@ -1,10 +1,10 @@
-uuid: 2b3643e5-023b-4747-9a62-304c50fabf56
+uuid: 734355e2-61c4-4d04-a651-95a43d1e41cb
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.clothing_order_variation_type
-    - core.entity_view_mode.commerce_product_variation.cart
+    - core.entity_view_mode.commerce_product_variation.cart_mode_title_plus_size
     - field.field.commerce_product_variation.clothing_order_variation_type.attribute_size
   module:
     - layout_builder
@@ -12,23 +12,29 @@ third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: commerce_product_variation.clothing_order_variation_type.cart
+id: commerce_product_variation.clothing_order_variation_type.cart_mode_title_plus_size
 targetEntityType: commerce_product_variation
 bundle: clothing_order_variation_type
-mode: cart
+mode: cart_mode_title_plus_size
 content:
-  product_id:
-    type: entity_reference_entity_view
+  attribute_size:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  title:
+    type: string
     weight: 0
     region: content
     label: hidden
     settings:
-      view_mode: product_cart_img
-      link: false
+      link_to_entity: false
     third_party_settings: {  }
 hidden:
-  attribute_size: true
   list_price: true
   price: true
+  product_id: true
   sku: true
-  title: true

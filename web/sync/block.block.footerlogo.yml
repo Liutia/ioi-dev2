@@ -12,7 +12,7 @@ dependencies:
 id: footerlogo
 theme: IOI_theme
 region: footer_first
-weight: -18
+weight: -22
 provider: null
 plugin: 'block_content:dff4992e-dad4-4242-a1fc-34318206c35b'
 settings:

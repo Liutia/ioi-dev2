@@ -1,0 +1,145 @@
+.menu--your-cart{
+  text-align: center;
+  ul{
+    justify-content: center;
+    .nav-link{
+      border-bottom: 1px solid $clr-commerce-btn-red;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 2px;
+      color: $clr-commerce-btn-red;
+      &:hover{
+        border-color: $clr-btn-red-hover;
+        color: $clr-btn-red-hover;
+      }
+    }
+  }
+}
+.view-commerce-cart-form{
+  .view-content{
+    .views-form{
+      flex: 0 1 1090px;
+      form{
+        .form-actions{
+          text-align: end;
+          #edit-submit{
+            display: none;
+          }
+          #edit-checkout{
+            width: 130px;
+            height: 40px;
+            text-transform: uppercase;
+            margin-right: 15px;
+            background-color: $clr-commerce-btn-red;
+            border-radius: 2px;
+            border: 1px solid $clr-commerce-btn-red;
+            margin-top: 45px;
+          }
+        }
+      }
+    }
+    justify-content: center;
+    //.table th, .table td{
+    //  border-top: none;
+    //}
+    .table{
+      th{
+        border-top: none;
+        border-bottom: none;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      td{
+        border-bottom: 1px solid #dee2e6;
+        vertical-align: middle;
+      }
+      tbody{
+        .field--name-product-id{
+          .layout--onecol{
+            display: none;
+          }
+        }
+        .views-field-purchased-entity-1{
+          width: 454px;
+          .field--name-attribute-size{
+            margin-bottom: 0;
+          }
+          margin-top: 5px;
+        }
+        .views-field-remove-button{
+          position: relative;
+          right: 455px;
+          button{
+            position: relative;
+            top: 45px;
+            color: red;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid red;
+            width: min-content;
+            border-radius: 0;
+            padding: 0;
+            &:hover{
+              color: $clr-btn-red-hover;
+              border-color: $clr-btn-red-hover;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .field--name-total-price{
+    .order-total-line__total{
+      display: none;
+    }
+    .order-total-line__subtotal{
+      font-size: 1.2rem;
+      .order-total-line-label{
+        padding-right: 55px;
+      }
+    }
+  }
+}
+.table-striped tbody tr:nth-of-type(2n+1){
+  background-color: rgba(0, 0, 0, 0);
+}
+.block-commerce-currency-resolver{
+  margin: 0 auto;
+  .commerce-currency-resolver-select-form{
+    width: 200px;
+    .form-select{
+      width: 100%;
+      border-radius: 0;
+      border: none;
+    }
+  }
+  button{
+    display:none;
+  }
+}
+
+
+@media screen and (max-width: 945px){
+  .view-commerce-cart-form .view-content .table tbody .views-field-remove-button{
+    position: static;
+    button{
+      position: static;
+    }
+  }
+}
+@media screen and (max-width: 659px){
+  .view-commerce-cart-form .view-content .table .views-field-purchased-entity{
+    display: none;
+  }
+}
+@media screen and (max-width: 470px){
+  .view-commerce-cart-form .view-content .table .views-field-unit-price__number{
+    display: none;
+  }
+}
+@media screen and (max-width: 388px){
+  .view-commerce-cart-form .view-content .table .views-field-edit-quantity{
+    display: none;
+  }
+}
