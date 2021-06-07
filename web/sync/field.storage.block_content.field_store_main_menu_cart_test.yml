@@ -1,0 +1,19 @@
+uuid: e649396c-fe9d-457a-8d39-65386547f59c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_store_main_menu_cart_test
+field_name: field_store_main_menu_cart_test
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 19e76d1f-b47b-454a-8481-61ceed4b0209
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.cart_mode_title_plus_size
+label: 'Cart mode title plus size'
+targetEntityType: commerce_product_variation
+cache: true

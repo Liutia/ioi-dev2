@@ -1,51 +1,35 @@
-uuid: 0fffe41c-d238-40c5-894c-49ae05c8632a
+uuid: d0f35ed5-278e-4bf5-939e-37f33169d9b8
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.clothing_product_type
+    - core.entity_view_mode.commerce_product.product_cart_img
     - field.field.commerce_product.clothing_product_type.body
     - field.field.commerce_product.clothing_product_type.field_clothing_catego
     - field.field.commerce_product.clothing_product_type.field_price
     - field.field.commerce_product.clothing_product_type.field_product_image
-    - image.style.280x200
+    - image.style.100x100
   module:
-    - commerce_product
     - layout_builder
     - media
 third_party_settings:
   layout_builder:
     allow_custom: false
     enabled: false
-id: commerce_product.clothing_product_type.default
+id: commerce_product.clothing_product_type.product_cart_img
 targetEntityType: commerce_product
 bundle: clothing_product_type
-mode: default
+mode: product_cart_img
 content:
   field_product_image:
     type: media_thumbnail
-    weight: 1
-    region: content
-    label: hidden
-    settings:
-      image_style: 280x200
-      image_link: content
-    third_party_settings: {  }
-  title:
-    type: string
     weight: 0
     region: content
     label: hidden
     settings:
-      link_to_entity: true
-    third_party_settings: {  }
-  variations:
-    type: commerce_add_to_cart
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      combine: true
+      image_style: 100x100
+      image_link: content
     third_party_settings: {  }
 hidden:
   body: true
@@ -53,4 +37,6 @@ hidden:
   field_clothing_catego: true
   field_price: true
   stores: true
+  title: true
   uid: true
+  variations: true

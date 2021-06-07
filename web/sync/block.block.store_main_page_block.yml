@@ -26,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /store
+    pages: "/store\r\n/cart\r\n/product\r\n/product/*\r\n/checkout\r\n/checkout/*"
     negate: false

@@ -10,7 +10,7 @@ dependencies:
 id: currencyblock
 theme: IOI_theme
 region: footer_excheng
-weight: -22
+weight: -23
 provider: null
 plugin: commerce_currency_resolver
 settings:

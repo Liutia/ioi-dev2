@@ -12,7 +12,7 @@ dependencies:
 id: f4ntecgmbh_2
 theme: IOI_theme
 region: footer_first
-weight: -19
+weight: -23
 provider: null
 plugin: 'block_content:63f0878f-640d-4047-809c-217f696c5724'
 settings:

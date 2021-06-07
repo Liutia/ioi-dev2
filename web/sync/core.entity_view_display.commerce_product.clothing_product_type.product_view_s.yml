@@ -11,7 +11,7 @@ dependencies:
     - field.field.commerce_product.clothing_product_type.field_product_image
     - image.style.280x200
   module:
-    - commerce_product
+    - ds
     - layout_builder
     - media
 third_party_settings:
@@ -32,19 +32,29 @@ content:
       image_style: 280x200
       image_link: content
     third_party_settings: {  }
-  variations:
-    type: commerce_add_to_cart
+  title:
+    type: string
     weight: 1
     region: content
     label: hidden
     settings:
-      combine: true
+      link_to_entity: true
     third_party_settings: {  }
+  variations:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: price
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   body: true
   created: true
   field_clothing_catego: true
   field_price: true
   stores: true
-  title: true
   uid: true
