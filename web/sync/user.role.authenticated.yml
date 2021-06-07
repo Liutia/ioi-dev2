@@ -11,6 +11,7 @@ is_admin: false
 permissions:
   - 'access checkout'
   - 'access comments'
+  - 'access commerce_order overview'
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
@@ -20,6 +21,7 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'view commerce_product'
+  - 'view commerce_store'
   - 'view empty pages'
   - 'view media'
   - 'view own commerce_order'

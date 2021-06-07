@@ -11,10 +11,13 @@ is_admin: false
 permissions:
   - 'access checkout'
   - 'access comments'
+  - 'access commerce_order overview'
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view commerce_store'
   - 'view empty pages'
   - 'view media'
+  - 'view own commerce_order'
