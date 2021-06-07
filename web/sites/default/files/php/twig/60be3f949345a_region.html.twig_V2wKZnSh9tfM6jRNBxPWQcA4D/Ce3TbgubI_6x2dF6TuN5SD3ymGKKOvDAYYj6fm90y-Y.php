@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/contrib/fontawesome/templates/fontawesomeicons.html.twig */
-class __TwigTemplate_6f3c16e9a7e8d904f8476edad29b60ab992cf32f96d5d884fe5519c25f235f4d extends \Twig\Template
+/* themes/contrib/bootstrap_barrio/templates/layout/region.html.twig */
+class __TwigTemplate_6b89b42136dd22c838972adaa85a458de51de61167591af2df9ef30a1a0b231f extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -35,31 +35,27 @@ class __TwigTemplate_6f3c16e9a7e8d904f8476edad29b60ab992cf32f96d5d884fe5519c25f2
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 13
-        echo "<div class=\"fontawesome-icons\">
-  ";
-        // line 14
-        if ((($context["layers"] ?? null) == "1")) {
-            // line 15
-            echo "    <span class=\"fa-layers fa-fw\">";
-            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["icons"] ?? null), 15, $this->source), "html", null, true);
-            echo "</span>
-  ";
-        } else {
-            // line 17
-            echo "    ";
-            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["icons"] ?? null), 17, $this->source), "html", null, true);
+        // line 16
+        $context["classes"] = [0 => "region", 1 => ("region-" . \Drupal\Component\Utility\Html::getClass($this->sandbox->ensureToStringAllowed(        // line 18
+($context["region"] ?? null), 18, $this->source)))];
+        // line 21
+        if (($context["content"] ?? null)) {
+            // line 22
+            echo "  <section";
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["attributes"] ?? null), "addClass", [0 => ($context["classes"] ?? null)], "method", false, false, true, 22), 22, $this->source), "html", null, true);
+            echo ">
+    ";
+            // line 23
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["content"] ?? null), 23, $this->source), "html", null, true);
             echo "
-  ";
-        }
-        // line 19
-        echo "</div>
+  </section>
 ";
+        }
     }
 
     public function getTemplateName()
     {
-        return "modules/contrib/fontawesome/templates/fontawesomeicons.html.twig";
+        return "themes/contrib/bootstrap_barrio/templates/layout/region.html.twig";
     }
 
     public function isTraitable()
@@ -69,24 +65,24 @@ class __TwigTemplate_6f3c16e9a7e8d904f8476edad29b60ab992cf32f96d5d884fe5519c25f2
 
     public function getDebugInfo()
     {
-        return array (  56 => 19,  50 => 17,  44 => 15,  42 => 14,  39 => 13,);
+        return array (  49 => 23,  44 => 22,  42 => 21,  40 => 18,  39 => 16,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "modules/contrib/fontawesome/templates/fontawesomeicons.html.twig", "/var/www/web/modules/contrib/fontawesome/templates/fontawesomeicons.html.twig");
+        return new Source("", "themes/contrib/bootstrap_barrio/templates/layout/region.html.twig", "/var/www/web/themes/contrib/bootstrap_barrio/templates/layout/region.html.twig");
     }
     
     public function checkSecurity()
     {
-        static $tags = array("if" => 14);
-        static $filters = array("escape" => 15);
+        static $tags = array("set" => 16, "if" => 21);
+        static $filters = array("clean_class" => 18, "escape" => 22);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['if'],
-                ['escape'],
+                ['set', 'if'],
+                ['clean_class', 'escape'],
                 []
             );
         } catch (SecurityError $e) {

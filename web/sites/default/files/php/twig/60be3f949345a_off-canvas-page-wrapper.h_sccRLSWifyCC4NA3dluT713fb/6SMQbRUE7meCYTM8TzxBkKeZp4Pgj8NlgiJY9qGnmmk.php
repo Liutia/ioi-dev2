@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* modules/contrib/commerce/modules/product/templates/commerce-product.html.twig */
-class __TwigTemplate_a06a694153e9e028cc89512f775225c1e7c9fe00f8fcda4285f269885ab8cada extends \Twig\Template
+/* core/modules/system/templates/off-canvas-page-wrapper.html.twig */
+class __TwigTemplate_96d8670cd05ae269f39f38b3eff871ce89038539df7bc9fbe336cdfb9ad310b7 extends \Twig\Template
 {
     private $source;
     private $macros = [];
@@ -36,19 +36,21 @@ class __TwigTemplate_a06a694153e9e028cc89512f775225c1e7c9fe00f8fcda4285f269885ab
     {
         $macros = $this->macros;
         // line 22
-        echo "<article";
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["attributes"] ?? null), 22, $this->source), "html", null, true);
-        echo ">";
-        // line 23
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->withoutFilter($this->sandbox->ensureToStringAllowed(($context["product"] ?? null), 23, $this->source), "variation_attributes"), "html", null, true);
-        // line 24
-        echo "</article>
+        if (($context["children"] ?? null)) {
+            // line 23
+            echo "  <div class=\"dialog-off-canvas-main-canvas\" data-off-canvas-main-canvas>
+    ";
+            // line 24
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["children"] ?? null), 24, $this->source), "html", null, true);
+            echo "
+  </div>
 ";
+        }
     }
 
     public function getTemplateName()
     {
-        return "modules/contrib/commerce/modules/product/templates/commerce-product.html.twig";
+        return "core/modules/system/templates/off-canvas-page-wrapper.html.twig";
     }
 
     public function isTraitable()
@@ -58,24 +60,24 @@ class __TwigTemplate_a06a694153e9e028cc89512f775225c1e7c9fe00f8fcda4285f269885ab
 
     public function getDebugInfo()
     {
-        return array (  45 => 24,  43 => 23,  39 => 22,);
+        return array (  44 => 24,  41 => 23,  39 => 22,);
     }
 
     public function getSourceContext()
     {
-        return new Source("", "modules/contrib/commerce/modules/product/templates/commerce-product.html.twig", "/var/www/web/modules/contrib/commerce/modules/product/templates/commerce-product.html.twig");
+        return new Source("", "core/modules/system/templates/off-canvas-page-wrapper.html.twig", "/var/www/web/core/modules/system/templates/off-canvas-page-wrapper.html.twig");
     }
     
     public function checkSecurity()
     {
-        static $tags = array();
-        static $filters = array("escape" => 22, "without" => 23);
+        static $tags = array("if" => 22);
+        static $filters = array("escape" => 24);
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
-                ['escape', 'without'],
+                ['if'],
+                ['escape'],
                 []
             );
         } catch (SecurityError $e) {
