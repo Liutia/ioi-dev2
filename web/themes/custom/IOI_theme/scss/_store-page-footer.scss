@@ -4,16 +4,15 @@
 
   src: url('https://nomail.com.ua/files/eot/416895af68d7ac172c399b6b5fbb2878.eot?#iefix') format('embedded-opentype'),
   url('https://nomail.com.ua/files/woff/416895af68d7ac172c399b6b5fbb2878.woff') format('woff'),
-  url('https://nomail.com.ua/files/woff2/416895af68d7ac172c399b6b5fbb2878.woff2') format('woff2');
-}
-.path-store {
+  url('https://nomail.com.ua/files/woff2/416895af68d7ac172c399b6b5fbb2878.woff2') format('woff2');  }
+.path-store, .path-cart, .path-product {
   .site-footer-2 {
     font-family: 'MaisonNeue-Book';
     padding: 0 40px;
     background-color: $clr-white;
+    color: $black;
     .container {
       max-width: 1200px;
-
       .region-footer-first {
         display: flex;
         padding-bottom: 70px;
@@ -57,6 +56,9 @@
         .field--name-field-payment {
           display: flex;
           flex-wrap: wrap;
+          .field__item {
+            margin-right: 5px;
+          }
         }
         .field--type-text-with-summary {
           font-size: 14px;
