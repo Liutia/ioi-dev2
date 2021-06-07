@@ -7,89 +7,88 @@
   url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.svg#Maison Neue") format("svg"); }
 
 
-  .site-footer-1 {
-    background-color: $clr-black;
-    color: $white;
-    .container {
-      max-width: 1245px;
-      padding: 0 30px;
+.site-footer-1 {
+  background-color: $clr-black;
+  color: $white;
+  .container {
+    max-width: 1245px;
+    padding: 0 30px;
+  }
+}
+.region-footer-first .block-block-content{
+  margin: 0 auto;
+  .field--name-field-footer-logo {
+    padding: 90px 0;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
-  .region-footer-first .block-block-content{
-    margin: 0 auto;
-    .field--name-field-footer-logo {
-      padding: 90px 0;
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-  .main-center-footer {
-    display: flex;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 20px;
-    .region-footer-contact {
-      display: block;
-      max-width: 100%;
-      .block-block-content {
-        .layout--twocol-section {
-          .layout__region--first {
-            padding-right: 25px;
-          }
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
-          line-height: 1.8;
-          padding-bottom: 10px;
+}
+.main-center-footer {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 20px;
+  .region-footer-contact {
+    display: block;
+    max-width: 100%;
+    .block-block-content {
+      .layout--twocol-section {
+        .layout__region--first {
+          padding-right: 25px;
         }
+        font-size: 12px;
+        font-family: 'Maison Neue', Sans-Serif;
+        line-height: 1.8;
+        padding-bottom: 10px;
+      }
+      h2 {
+        font-size: 12px;
+        padding-bottom: 20px;
+        font-family: 'Maison Neue', Sans-Serif;
+      }
+      .block-field-blockblock-contenthow-to-contact-usfield-phone {
+        display: flex;
+        align-items: baseline;
+        font-size: 12px;
+        font-family: 'Maison Neue', Sans-Serif;
         h2 {
-          font-size: 12px;
-          padding-bottom: 20px;
-          font-family: 'Maison Neue', Sans-Serif;
+          padding-right: 4px;
         }
-        .block-field-blockblock-contenthow-to-contact-usfield-phone {
-          display: flex;
-          align-items: baseline;
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
-          h2 {
-            padding-right: 4px;
+        .field--type-telephone {
+          a {
+            text-decoration: none;
+            color: $white;
           }
-          .field--type-telephone {
-            a {
-              text-decoration: none;
-              color: $white;
-            }
-          }
-        }
-        .block-field-blockblock-contenthow-to-contact-usfield-email {
-          display: flex;
-          align-items: baseline;
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
-          h2 {
-            padding-right: 4px;
-          }
-          .field__item {
-            a {
-              text-decoration: none;
-              color: $white;
-              &:hover {
-                color: $clr-btn-red;
-                transition: 0.5s;
-              }
-            }
-          }
-        }
-        .field--name-field-cvr {
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
         }
       }
+      .block-field-blockblock-contenthow-to-contact-usfield-email {
+        display: flex;
+        align-items: baseline;
+        font-size: 12px;
+        font-family: 'Maison Neue', Sans-Serif;
+        h2 {
+          padding-right: 4px;
+        }
+        .field__item {
+          a {
+            text-decoration: none;
+            color: $white;
+            &:hover {
+              color: $clr-btn-red;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+      .field--name-field-cvr {
+        font-size: 12px;
+        font-family: 'Maison Neue', Sans-Serif;
+      }
     }
-
   }
+}
 .region-footer-subscribe {
   display: flex;
   flex-direction: column;
@@ -144,51 +143,49 @@
     }
   }
 }
-  .region-footer-instagram {
-    .block-views-blocksocial-icon-front-page-block-1 {
-      h2 {
-        font-size: 12px;
-        padding-bottom: 20px;
-        font-family: 'Maison Neue', Sans-Serif;
-      }
-     .content {
-       .view-social-icon-front-page .view-content {
-         display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         grid-gap: 15px;
-         .views-field-field-image-instagram {
-           background-color: $clr-black;
-           &:hover {
-             background-color: $clr-black;
-             opacity: 0.5;
-             transition: 0.5s;
-           }
-         }
-       }
-     }
-    }
-  }
-  .region-footer-third {
-    padding: 140px 15px 10px 15px;
-    .block-block-content50f74e7d-336c-4e15-a4d9-6c4c914564ea {
+.region-footer-instagram {
+  .block-views-blocksocial-icon-front-page-block-1 {
+    h2 {
       font-size: 12px;
-      a  {
-        text-decoration: none;
-        color: $white;
-        &:hover {
-          color: $clr-btn-red;
-          transition: 0.5s;
+      padding-bottom: 20px;
+      font-family: 'Maison Neue', Sans-Serif;
+    }
+    .content {
+      .view-social-icon-front-page .view-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+        .views-field-field-image-instagram {
+          background-color: $clr-black;
+          &:hover {
+            background-color: $clr-black;
+            opacity: 0.5;
+            transition: 0.5s;
+          }
         }
       }
     }
   }
-
+}
+.region-footer-third {
+  padding: 140px 15px 10px 15px;
+  .block-block-content50f74e7d-336c-4e15-a4d9-6c4c914564ea {
+    font-size: 12px;
+    a  {
+      text-decoration: none;
+      color: $white;
+      &:hover {
+        color: $clr-btn-red;
+        transition: 0.5s;
+      }
+    }
+  }
+}
 
 @media (max-width: 992px) {
   .site-footer-1 {
     background-color: $clr-black;
     color: $white;
-
     .container {
       max-width: 1245px;
       padding: 0 30px;
@@ -213,7 +210,6 @@
       display: flex;
       max-width: 100%;
       margin: 0 auto;
-
       .block-block-content {
         .layout--twocol-section {
           .layout__region--first {
@@ -265,9 +261,8 @@
           font-size: 12px;
           font-family: 'Maison Neue', Sans-Serif;
 
+        }
       }
-    }
-
     }
     .region-footer-subscribe {
       display: flex;
@@ -347,7 +342,6 @@
               transition: 0.5s;
             }
           }
-
         }
       }
     }
@@ -366,8 +360,6 @@
       }
     }
   }
-
-
 }
 
 @media (max-width: 650px) {
@@ -383,7 +375,7 @@
   .region-footer-first .block-block-content{
     margin: 0 auto;
     .field--name-field-footer-logo {
-      padding: 90px 0;
+      padding: 90px 10px;
       img {
         width: 100%;
         height: auto;
@@ -393,7 +385,7 @@
   .main-center-footer {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 10px;
     .region-footer-contact {
       display: flex;
       justify-content: center;
@@ -401,7 +393,13 @@
       max-width: 100%;
 
       .block-block-content {
+        h2 {
+          text-align: center;
+        }
         .layout--twocol-section {
+          display: flex;
+          flex-wrap: nowrap;
+
           .layout__region--first {
             padding-right: 25px;
           }
@@ -415,45 +413,50 @@
           padding-bottom: 20px;
           font-family: 'Maison Neue', Sans-Serif;
         }
-        .block-field-blockblock-contenthow-to-contact-usfield-phone {
+        .layout__region--content {
           display: flex;
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
-          h2 {
-            padding-right: 4px;
-          }
-          .field--type-telephone {
-            a {
-              text-decoration: none;
-              color: $white;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 10px;
+          .block-field-blockblock-contenthow-to-contact-usfield-phone {
+            display: flex;
+            font-size: 12px;
+            font-family: 'Maison Neue', Sans-Serif;
+            h2 {
+              padding-right: 4px;
             }
-          }
-        }
-        .block-field-blockblock-contenthow-to-contact-usfield-email {
-          display: flex;
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
-          h2 {
-            padding-right: 4px;
-          }
-          .field__item {
-            a {
-              text-decoration: none;
-              color: $white;
-              &:hover {
-                color: $clr-btn-red;
-                transition: 0.5s;
+            .field--type-telephone {
+              a {
+                text-decoration: none;
+                color: $white;
               }
             }
           }
-        }
-        .field--name-field-cvr {
-          font-size: 12px;
-          font-family: 'Maison Neue', Sans-Serif;
+          .block-field-blockblock-contenthow-to-contact-usfield-email {
+            display: flex;
+            font-size: 12px;
+            font-family: 'Maison Neue', Sans-Serif;
+            h2 {
+              padding-right: 4px;
+            }
+            .field__item {
+              a {
+                text-decoration: none;
+                color: $white;
+                &:hover {
+                  color: $clr-btn-red;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+          .field--name-field-cvr {
+            font-size: 12px;
+            font-family: 'Maison Neue', Sans-Serif;
 
+          }
         }
       }
-
     }
     .region-footer-subscribe {
       display: flex;
@@ -534,7 +537,6 @@
               transition: 0.5s;
             }
           }
-
         }
       }
     }
@@ -553,6 +555,4 @@
       }
     }
   }
-
-
 }

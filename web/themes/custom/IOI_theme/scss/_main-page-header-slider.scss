@@ -1,5 +1,4 @@
 @import "variables";
-
 .page-view-frontpage{
   header{
     .node__title{
@@ -97,15 +96,10 @@
           }
         }
         .header-slider-buttons-wrapper{
-          display: flex;
-          gap: 10px;
+          flex-direction: column;
           .left-slider-button, .right-slider-button{
             a{
-              background: $clr-btn-red;
-              &:hover{
-                background: $clr-btn-red-hover;
-                color: $clr-white;
-              }
+              padding: 10px 20px;
             }
           }
         }
