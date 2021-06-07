@@ -25,14 +25,22 @@
           &:hover a{
             text-decoration: underline;
           }
-          .views-field-field-product-image{
+          .field--name-field-product-image{
             text-align: center;
           }
-          .views-field-title{
-            .field-content{
-              a{
-                padding-right: 20px;
-                color: $clr-black;
+          div:nth-child(2){
+            display: none;
+          }
+          .field--name-title{
+            a{
+              padding-right: 20px;
+              color: $clr-black;
+              font-weight: 600;
+            }
+          }
+          .field--name-variations{
+            .field__item{
+              .field--name-price{
                 font-weight: 600;
               }
             }
