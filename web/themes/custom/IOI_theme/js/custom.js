@@ -8,9 +8,11 @@
   'use strict';
 
   Drupal.behaviors.IOI_theme = {
-    attach: function() {
+    attach: function(context, settings) {
+
       window.onscroll = function() {scrollFunction()};
 
+      //menu
       function scrollFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
           $("#navbar-main").css({
@@ -32,6 +34,23 @@
           $('.nav-link').css("color", "white");
         }
       }
+
+      if($(window).width() < 580) {
+        $("#block-headerlogoonscroll").css("display", "none");
+        $("#block-headerlogo").css("display", "none");
+        $('.nav-link').css("color", "white");
+      } else {
+        console.log('it is not working properly');
+      }
+
+      //burger menu on the main page button
+      $(function() {
+        $('.navbar-toggler-right').on('click', function () {
+          console.log(1);
+          $(".collapse").get(0).classList.toggle("menu-drop-active");
+        });
+      });
+
     }
   };
 
