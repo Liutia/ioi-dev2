@@ -11,6 +11,7 @@ dependencies:
     - image.style.280x200
   module:
     - commerce_product
+    - ds
     - layout_builder
     - media
 third_party_settings:
@@ -43,10 +44,12 @@ content:
     type: commerce_add_to_cart
     weight: 2
     region: content
-    label: hidden
+    label: above
     settings:
       combine: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   body: true
   created: true

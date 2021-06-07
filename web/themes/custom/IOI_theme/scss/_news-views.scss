@@ -34,6 +34,7 @@
       letter-spacing: -2px;
       color: $clr-h2;
       margin-top: 40px;
+      margin-bottom: 30px;
     }
     .views-row{
       margin: -10px 0;
@@ -156,6 +157,109 @@
   .news-ioi-teaser {
     .layout--onecol:nth-of-type(2) {
       @include news-br($clr-news-br-gray, $sm);
+    }
+  }
+}
+.view-taxonomy-term, .view-all-news{
+  .node__content{
+    border-bottom: 2px dashed $clr-black;
+    .block-field-blocknodenewstitle{
+      display: none;
+    }
+  }
+  font-family: "MaisonNeueMono", sans-serif;
+  padding-left: 25px;
+  padding-right: 25px;
+  .node__title{
+    text-align: center;
+    margin-top: 40px;
+    a{
+      color: $clr-black;
+    }
+  }
+  .field--name-field-news-image{
+    text-align: center;
+    img{
+      max-width: 1400px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .field--name-field-news-date{
+    font-size: 32px;
+    float:right;
+    margin-bottom: 10px;
+  }
+  .field--name-field-news-category{
+    text-transform: uppercase;
+    a[href="/news/game-news"]{
+      color: $clr-news-br-red;
+    }
+    a[href="/news/ioi-news"]{
+      color: $clr-news-br-gray;
+    }
+  }
+  .pagination{
+    margin: 20px auto 20px;
+    justify-content: center;
+    .page-link{
+      color: $clr-black;
+    }
+    .page-item{
+    }
+    .active{
+      .page-link{
+        background: $clr-news-br-gray;
+        border-color:$clr-news-br-gray;
+        color: $white;
+      }
+
+    }
+  }
+}
+//New
+.node--view-mode-full{
+  .layout--onecol {
+    font-family: "MaisonNeueMono", sans-serif;
+    //padding: 15px;
+
+    .field--name-title {
+      text-align: center;
+      margin: 40px auto 20px;
+      display: block;
+      font-size: 30px;
+
+      a {
+        color: $clr-black;
+      }
+    }
+
+    .field--name-field-news-image {
+      text-align: center;
+
+      img {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .field--name-field-news-date {
+      font-size: 32px;
+      float: right;
+      margin-bottom: 10px;
+    }
+
+    .field--name-field-news-category {
+      text-transform: uppercase;
+
+      a[href="/news/game-news"] {
+        color: $clr-news-br-red;
+      }
+
+      a[href="/news/ioi-news"] {
+        color: $clr-news-br-gray;
+      }
     }
   }
 }

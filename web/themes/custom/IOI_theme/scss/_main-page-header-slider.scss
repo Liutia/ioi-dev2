@@ -14,7 +14,6 @@
     }
   }
   .main-slider{
-    background: $clr-black;
     .node--unpublished{
       padding: 0;
     }
@@ -94,6 +93,14 @@
           text-align: center;
           p{
             color: $clr-black;
+          }
+        }
+        .header-slider-buttons-wrapper{
+          flex-direction: column;
+          .left-slider-button, .right-slider-button{
+            a{
+              padding: 10px 20px;
+            }
           }
         }
       }
