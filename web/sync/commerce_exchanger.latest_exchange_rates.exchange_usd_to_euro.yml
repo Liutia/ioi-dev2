@@ -1,9 +1,0 @@
-rates:
-  EUR:
-    USD:
-      value: 1.22
-      sync: 1
-  USD:
-    EUR:
-      value: 0.82
-      sync: 1
