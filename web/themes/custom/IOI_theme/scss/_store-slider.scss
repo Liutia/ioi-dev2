@@ -28,7 +28,6 @@
 }
 .store-slider{
   width: 100%;
-
   img{
     max-width: 100%;
     width: 100%;
@@ -51,6 +50,9 @@
     .list-group-item{
       border: none;
       margin-top: 7px;
+      &:first-of-type{
+        margin-left: 50px;
+      }
       .active{
         margin-top: 0;
       }
@@ -58,6 +60,9 @@
     li{
       padding: 0 4px;
       background: #aaa;
+      &:hover .views_slideshow_controls_text{
+        background: red;
+      }
       &.active{
         background: $white;
       }
@@ -66,8 +71,11 @@
 
   .views_slideshow_controls_text_pause {
     margin-left: 20px;
-    background: black;
+    background: rgba(0, 0, 0, 0.3);
     padding: 2px 11px 2px 11px;
+    &:hover{
+      background: black;
+    }
     .svg-inline--fa{
       font-size: 15px;
       color: #aaa;
@@ -78,25 +86,35 @@
   }
 }
 .views_slideshow_controls_text{
-  background: black;
-  .views_slideshow_controls_text_next{
-    margin: 0 0 0 80px;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  &:hover{
+    text-decoration: none;
     background: black;
+  }
+  &:hover .views_slideshow_controls_text_pause{
+    background: black;
+  }
+  span:hover{
+    text-decoration: none;
+  }
+  .views_slideshow_controls_text_next{
+    margin: 0 0 0 96px;
     padding-bottom: 2px;
-    padding-right: 16px;
-    a{
-      font-size: 15px;
-      color: #aaa;
-      &:hover{
+    padding-right: 0.9rem;
+    &:hover, &:hover .views_slideshow_controls_text_previous{
+      a{
         text-decoration: none;
         color: $white;
       }
     }
+    a{
+      font-size: 15px;
+      color: #aaa;
+    }
   }
   .views_slideshow_controls_text_previous{
-    margin: 0 0 0 -50px;
-    background: black;
-    padding: 0 41px 2px 16px;
+    padding: 0 22px 2px 16px;
     a{
       font-size: 15px;
       color: #aaa;
@@ -107,7 +125,6 @@
     }
   }
 }
-
 
 
 .views-slideshow-controls-text-status-pause{
@@ -137,7 +154,7 @@
       color: $white;
       text-transform: uppercase;
       line-height: 1.2;
-      font-size: 3em;
+      font-size: 4em;
     }
     .field--name-field-slider-store-link{
       font-family: "Maison Neue", sans-serif;
@@ -147,6 +164,7 @@
       text-transform: uppercase;
       max-width: 235px;
       margin: 30px auto 0;
+      transition: 0.5s;
       &:hover{
         background: $clr-btn-red-hover;
       }
