@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.commerce_product.product_view_s
     - field.storage.commerce_product.field_price
     - field.storage.commerce_product.field_product_image
     - image.style.280x200
@@ -65,12 +66,10 @@ display:
           row_class_default: true
           row_class_custom: ''
       row:
-        type: fields
+        type: 'entity:commerce_product'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: product_view_s
       fields:
         field_product_image:
           id: field_product_image

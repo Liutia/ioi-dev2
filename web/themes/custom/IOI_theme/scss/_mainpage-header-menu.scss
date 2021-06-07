@@ -16,16 +16,24 @@
         width: 1240px;
         display: flex;
         justify-content: space-between;
+        transition: 0.5s;
         #block-headerlogo{
+          transition: 0.5s;
           img{
             transition: 0.5s;
           }
         }
         #block-headerlogoonscroll{
           display: none;
+          transition: 0.5s;
           img{
             transition: 0.5s;
           }
+        }
+        .navbar-toggler{
+          z-index: 3;
+          border: 1px solid $clr-white;
+          background: $clr-btn-red;
         }
         .block-menu{
           ul{
@@ -44,8 +52,9 @@
               }
             }
             li:nth-child(6){
+              text-align: center;
               background: $clr-btn-red;
-              width: 120px;
+              padding: 0 20px 0 20px;
               height: 40px;
               border-radius: 3px;
               &:hover{
@@ -65,6 +74,68 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .path-frontpage{
+    #page-wrapper{
+      #navbar-main{
+        .nav-wrapper{
+          .collapse{
+            transition: 1s;
+            .block-menu{
+              ul{
+                display: flex;
+                margin: 0 auto;
+                text-align: center;
+                flex-direction: column;
+                li:nth-child(1){
+                  border-top: 1px solid $clr-white;
+                }
+                li{
+                  a{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    background: $clr-btn-red;
+                    width: 100%;
+                    border-bottom: 1px solid $clr-white;
+                    border-right: 1px solid $clr-white;
+                    &:hover{
+                      background: $clr-btn-red-hover;
+                    }
+                  }
+                }
+                li:nth-child(6){
+                  padding: 0;
+                  a{
+                    background: $clr-btn-red;
+                    width: 100% !important;
+                    height: 40px;
+                    border-radius: 3px;
+                    border-bottom: 1px solid $clr-white;
+                    border-right: 1px solid $clr-white;
+                    &:hover{
+                      background: $clr-btn-red-hover;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  #block-headerlogo{
+    display: none !important;;
+  }
+  #block-headerlogoonscroll{
+    display: none !important;
+  }
+}
+
 @media (max-width: 730px) {
   .path-frontpage {
     #page-wrapper {
@@ -75,4 +146,9 @@
       }
     }
   }
+}
+.nav-wrapper .menu-drop-active.collapse:not(.show) {
+  z-index: 9999;
+  transition: 0.5s;
+  display: block;
 }

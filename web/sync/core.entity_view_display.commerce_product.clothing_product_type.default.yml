@@ -10,8 +10,8 @@ dependencies:
     - field.field.commerce_product.clothing_product_type.field_product_image
     - image.style.280x200
   module:
-    - commerce_price
     - commerce_product
+    - ds
     - layout_builder
     - media
 third_party_settings:
@@ -23,15 +23,6 @@ targetEntityType: commerce_product
 bundle: clothing_product_type
 mode: default
 content:
-  field_price:
-    type: commerce_price_default
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      currency_display: symbol
-      strip_trailing_zeroes: false
-    third_party_settings: {  }
   field_product_image:
     type: media_thumbnail
     weight: 1
@@ -51,15 +42,18 @@ content:
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 3
+    weight: 2
     region: content
-    label: hidden
+    label: above
     settings:
       combine: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
 hidden:
   body: true
   created: true
   field_clothing_catego: true
+  field_price: true
   stores: true
   uid: true

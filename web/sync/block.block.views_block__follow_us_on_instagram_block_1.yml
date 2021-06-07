@@ -2,11 +2,8 @@ uuid: b4869b7e-0666-461a-b1f3-e7878895b49c
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.follow_us_on_instagram
   module:
     - system
-    - views
   theme:
     - IOI_theme
 id: views_block__follow_us_on_instagram_block_1

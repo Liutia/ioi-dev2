@@ -8,56 +8,10 @@ dependencies:
   module:
     - commerce_price
     - layout_builder
-    - layout_discovery
 third_party_settings:
   layout_builder:
     allow_custom: false
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          6fc9c644-cce0-4a95-add6-d9c375abea57:
-            uuid: 6fc9c644-cce0-4a95-add6-d9c375abea57
-            region: content
-            configuration:
-              id: 'field_block:commerce_product_variation:clothing_order_variation_type:price'
-              label: Price
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: commerce_price_default
-                settings:
-                  strip_trailing_zeroes: false
-                  currency_display: symbol
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 10
-          e6a1897d-4a79-45ef-9a97-5257b266e6bf:
-            uuid: e6a1897d-4a79-45ef-9a97-5257b266e6bf
-            region: content
-            configuration:
-              id: 'field_block:commerce_product_variation:clothing_order_variation_type:title'
-              label: Title
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: string
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 9
-        third_party_settings: {  }
+    enabled: false
 id: commerce_product_variation.clothing_order_variation_type.default
 targetEntityType: commerce_product_variation
 bundle: clothing_order_variation_type
@@ -65,13 +19,6 @@ mode: default
 content:
   price:
     type: commerce_price_plain
-    weight: 1
-    region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  product_id:
-    type: entity_reference_entity_id
     weight: 0
     region: content
     label: hidden
@@ -80,5 +27,6 @@ content:
 hidden:
   attribute_size: true
   list_price: true
+  product_id: true
   sku: true
   title: true
